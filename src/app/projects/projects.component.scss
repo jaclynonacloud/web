@@ -1,0 +1,302 @@
+@import "./../../globals";
+
+.projects {
+    flex: 1;
+    @extend %display-flex;
+    flex-flow: column;
+    align-items: center;
+    // background: red;
+    width: 100%;
+    height: 100vh;
+    padding: 0 5px 0 0;
+    box-sizing: border-box;
+    overflow: auto;
+
+    @media #{$size-tablet} {
+        height: -moz-max-content;
+        height: max-content;
+        padding: 0;
+        min-height: 100vh;
+    }
+
+    .container-center {
+        @extend %display-flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+        box-sizing: border-box;
+
+        &--minis {
+            display: grid;
+            // grid-template-columns: repeat(auto-fill, 250px);
+            // grid-template-columns: repeat(auto-fill, 250px);
+            grid-template-columns: repeat(3, 1fr);
+            // grid-auto-rows: minmax(100px, auto);
+            grid-template-areas: 
+                "s s s";
+
+            grid-gap: 5px;
+            justify-content: center;
+
+            @media #{$size-phone} {
+                // grid-template-columns: repeat(auto-fill, 45%);
+                grid-template-columns: repeat(2, 1fr);
+                // grid-auto-rows: 3fr;
+                grid-template-areas: 
+                "s s";
+            }
+        }
+    }
+
+    .project {
+        position: relative;
+        @extend %display-flex-center;
+        background: black;
+        height: 20vh;
+        max-height: 300px;
+        min-height: 150px;
+        margin: 10px 0;
+        font-size: 0.8em;
+        cursor: pointer;
+        transition: ease height 0.1s;
+
+        &.selected {
+            height: 500px;
+            max-height: unset;
+
+            @media #{$size-phone} {
+                height: 100vh;
+            }
+
+            @media #{$size-tablet} {
+                .btnClose {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    background: $mainColour url('./../../assets/images/cross.png') 5px 5px no-repeat;
+                    background-size: 35px 35px;
+                    width: 35px;
+                    height: 35px;
+                    padding: 5px;
+                    border-radius: 15px 0 0 15px;
+                    z-index: 60;
+
+                    &:hover {
+                        background-color: mix($mainColour, white, 80);
+                    }
+                }
+            }
+        }
+
+        .image-container {
+            opacity: 0.4;
+            transition: ease opacity 0.3s;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+        
+
+        @media #{$size-tablet} {
+            margin: 0 0 10px 0;
+        }
+
+        
+
+        .image-container {
+            position: relative;
+            @extend %display-flex-center;
+            background: rgb(74,71,98);
+            background: linear-gradient(135deg, rgba(74,71,98,1) 0%, rgba(180,85,105,1) 50%);
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        &__image {
+            // max-height: 100%;
+            max-width: 100%;
+
+            @media #{$size-tablet} {
+                max-width: 100%;
+                max-height: unset;
+            }
+            @media #{$size-phone} {
+                max-height: 100vh;
+            }
+        }
+        
+        &__details {
+            position: absolute;
+            bottom: 5px;
+            left: 0;
+            right: 0;
+            // background: $mainColour;
+            @extend %display-flex;
+            flex-flow: column;
+            align-items: center;
+            padding: 2px 10px;
+            color: mix($mainColour, white, 40);
+            color: white;
+            // mix-blend-mode: multiply;
+            box-sizing: border-box;
+            pointer-events: none;
+
+           
+
+            .row {
+                @extend %display-flex;
+                flex-flow: row wrap;
+                justify-content: space-around;
+                align-items: center;
+                width: 100%;
+                margin-bottom: 5px;
+
+                &.details {
+                    background: $mainColour;
+                    background: linear-gradient(90deg, $mainColour 15%,rgba(0,0,0,0) 95%);
+                    padding: 5px 10px;
+
+                    @media #{$size-tablet} {
+                        flex-flow: column;
+                        background: linear-gradient(90deg, $mainColour 50%,rgba(0,0,0,0) 95%);
+                    }
+                }
+
+                @media #{$size-phone} {
+                    flex-flow: column;
+                }
+            }
+
+            .title {
+                text-align: center;
+            }
+
+            .tags {
+                flex: 1;
+                margin-left: 5px;
+                // color: mix($mainColour, white, 30);
+            }
+
+            .body {
+                @extend %display-flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+                align-items: center;
+                background: #1b1b1b;
+                padding: 5px 10px;
+                padding-top: 20px;
+                margin: -4px 0;
+                color: white;
+                display: none;
+                pointer-events: all;
+            }
+
+            .links {
+                @extend %display-flex-center;
+                justify-content: flex-end;
+                width: 100%;
+                
+                &__link {
+                    margin: 0 5px;
+                    color: grey;
+
+                    a {
+                        color: mix($secondaryColour, white, 50);
+                        &:hover {
+                            color: mix($secondaryColour, white, 30);
+                        }
+                    }
+                }
+            }
+        }
+
+        &__overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: $mainColour;
+            @extend %display-flex;
+            align-items: center;
+            padding: 2px 10px;
+            mix-blend-mode: overlay;
+            box-sizing: border-box;
+        }
+
+
+        &--minis, &--miinis {
+            margin: 0;            
+
+            .project__details {
+                flex-flow: column;
+                // background: $secondaryColour;
+                color: white;
+
+                .details {
+                    background: $secondaryColour;
+                    background: linear-gradient(90deg, $secondaryColour 15%,rgba(0,0,0,0) 95%);
+
+                    @media #{$size-tablet} {
+                        background: linear-gradient(90deg, $secondaryColour 50%,rgba(0,0,0,0) 95%);
+                    }
+                }
+
+                @media #{$size-tablet} {
+                    .row {
+                        flex-flow: column;
+                    }
+                    .tags {
+                        text-align: center;
+                    }
+                }
+                
+               
+
+                .body {
+                    display: none;
+                }
+            }
+
+        }
+
+
+        &.selected {
+            grid-area: s;
+            border: solid 1px $secondaryColour;
+            box-sizing: border-box;
+
+            .image-container {
+                opacity: 1;
+            }
+            
+            .body {
+                display: flex;
+            }
+
+            &::after {
+                position: absolute;
+                top: -1px;
+                left: -1px;
+                content: '';
+                width: 30px;
+                height: 30px;
+                background: $secondaryColour;
+
+                -webkit-clip-path: polygon(100% 0, 0 0, 0 100%);
+                clip-path: polygon(100% 0, 0 0, 0 100%);
+
+                @media #{$size-phone} {
+                    width: 0;
+                    height: 0;
+                }
+            }
+        }
+
+
+    }
+}

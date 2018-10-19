@@ -1,0 +1,44 @@
+@import "./../globals";
+
+.main {
+    flex: 1;
+    @extend %display-flex;
+    background: $backgroundColour;
+    width: 80vw;
+    max-width: 1600px;
+    min-height: 100vh;
+    margin: auto;
+
+    @media #{$size-tablet} {
+        flex-flow: column;
+    }
+
+    @media #{$size-phone} {
+        width: 100vw;
+    }
+}
+
+sidebar {
+    // background: orange;
+    @extend %display-flex;
+    flex-flow: column;
+    align-items: center;
+    width: 15vw;
+    min-width: 250px;
+    max-width: 400px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+
+.content {
+    flex: 1;
+    @extend %display-flex;
+    flex-flow: column;
+    min-height: 100vh;
+}
+
+
+projects {
+    flex: 1;
+}

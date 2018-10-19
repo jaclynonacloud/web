@@ -1,0 +1,40 @@
+// Sizing
+$size-phone: "screen and (max-width:500px)";
+$size-tablet: "screen and (max-width:768px)";
+
+%display-flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+%display-flex-center {
+    @extend %display-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%width-max-content {
+    width: max-content;
+    width: -moz-max-content;
+}
+%height-max-content {
+    height: max-content;
+    height: -moz-max-content;
+}
+%no-user-select {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+
+//colours
+$bodyColour: #424242;
+$backgroundColour: #e4e4e4;
+
+$mainColour: #4A4762;
+$secondaryColour: #B45569;

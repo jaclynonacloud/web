@@ -1,1 +1,7 @@
-This is an angular app!  check it out!
+<div class="main" *ngIf="jcloudData.IsLoaded">
+  <sidebar></sidebar>
+  <div class="content">
+    <nav-desktop></nav-desktop>
+    <projects></projects>
+  </div>
+</div>

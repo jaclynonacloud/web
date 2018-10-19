@@ -1,1 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./globals";
+
+
+html, body {
+
+    @extend %display-flex;
+    flex-flow: column;
+    background: $bodyColour;
+    min-width: 100vw;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    color: #0a0a0a;
+
+    @media #{$size-tablet} {
+        overflow: auto;
+    }
+}
+
+input {
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+h1, h2, h3 {
+    padding: 3px;
+    margin: 0;
+}
+
+a { 
+    text-decoration: none;
+}
+
+.blank {
+    height: 0;
+    @media #{$size-tablet} {
+        height: 100vh;
+    }
+}
