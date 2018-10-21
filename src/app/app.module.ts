@@ -7,13 +7,15 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { NavDesktopComponent } from './nav-desktop/nav-desktop.component';
 import { JcloudDataService } from './services/jcloud-data.service';
+import { ProjectModalComponent } from './project-modal/project-modal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
     ProjectsComponent,
-    NavDesktopComponent
+    NavDesktopComponent,
+    ProjectModalComponent
   ],
   imports: [
     BrowserModule,

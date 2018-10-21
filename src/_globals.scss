@@ -38,3 +38,21 @@ $backgroundColour: #e4e4e4;
 
 $mainColour: #4A4762;
 $secondaryColour: #B45569;
+
+
+// Custom Scrollbar
+::-webkit-scrollbar {
+    position: relative;
+    width: 8px;
+    overflow: hidden;
+}
+::-webkit-scrollbar-track {
+    background: mix($mainColour, $backgroundColour, 50);
+}
+::-webkit-scrollbar-thumb {
+    background: $mainColour;
+
+    &:hover {
+        background: mix($mainColour, black, 80);
+    }
+}

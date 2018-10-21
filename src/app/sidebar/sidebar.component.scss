@@ -5,15 +5,10 @@
     .btnNext {
         display: none;
         text-indent: 2.5px;
+        margin: 0 auto;
     }
 
     @media #{$size-tablet} {
-        position: relative;
-        justify-content: center;
-        width: 100%;
-        height: 100vh;
-        margin: auto;
-
         .btnNext {
             position: relative;
             bottom: 10px;
@@ -34,9 +29,7 @@
         }
     }
 
-    @media #{$size-phone} {
-        margin-top: -30px;
-    }
+   
 
     .icon {
         background: $mainColour;
@@ -46,8 +39,8 @@
         overflow: hidden;
 
         @media #{$size-tablet} {
-        max-width: 90%;
-        margin: 0 0 10px 0;
+            max-width: 90%;
+            margin: 0 auto;
         }
 
         &__image {
@@ -74,6 +67,7 @@
         flex-flow: column;
         align-items: center;
         width: 100%;
+        margin: 0 auto;
 
         @media #{$size-tablet} {
             max-width: 90%;

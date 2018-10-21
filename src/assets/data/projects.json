@@ -100,17 +100,9 @@
             ]
         }
     ],
-    "minis" : [
-        "Active Windows",
-        "Really Long Title OMOMOMOMOMGs",
-        "Fakey Project 1",
-        "Fakey Project 2",
-        "Fakey Project 3",
-        "Fakey Project 4",
-        "Fakey Project 5",
-        "Fakey Project 6",
-        "Fakey Project 7",
-        "Fakey Project 8",
-        "Really Long 2"
+    "showcase" : [
+        "celestials",
+        "spritesheetr",
+        "Mimic Woods"
     ]
 }

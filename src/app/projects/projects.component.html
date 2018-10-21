@@ -1,7 +1,7 @@
 <div class="projects">
   <div class="container">
       <!-- PROJECT -->
-      <div class="project" *ngFor="let proj of jcloudData.Projects.projects">
+      <div class="project" *ngFor="let proj of jcloudData.Showcases">
           <div class="btnClose"></div>
           <div class="image-container">
               <img class="project__image image" src="./assets/images/projects/{{ proj.imageSrc }}" [alt]="proj.name" *ngIf="proj.imageSrc">
@@ -30,14 +30,14 @@
   <div class="container-center">
       <div class="container container--minis">
           <!-- MINI -->
-          <div class="project project--minis">
+          <div class="project project--minis" *ngFor="let proj of jcloudData.Projects">
               <div class="btnClose"></div>
               <div class="image-container">
                   <img class="project__image image" src="#" alt="">
               </div>
               <div class="project__details">
                   <div class="row details">
-                      <h3 class="title">Title</h3>
+                      <h3 class="title">{{ proj.name }}</h3>
                       <span class="tags">javascript</span>
                   </div>
                   <div class="row body">
@@ -55,3 +55,6 @@
       </div>
   </div>
 </div>
+
+
+<project-modal></project-modal>

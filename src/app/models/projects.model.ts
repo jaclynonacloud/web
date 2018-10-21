@@ -1,6 +1,6 @@
 export interface Projects {
     projects: Project[];
-    minis:    Project[];
+    showcase:    string[];
 }
 
 export interface Project {
