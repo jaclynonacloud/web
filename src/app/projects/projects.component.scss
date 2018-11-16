@@ -57,15 +57,10 @@
         height: 20vh;
         max-height: 300px;
         min-height: 150px;
-        margin: 10px 0;
+        margin: 2.5px 0;
         font-size: 0.8em;
         cursor: pointer;
         transition: ease height 0.1s;
-
-        &:first {
-            font-size: 2em;
-            margin-top: 0;
-        }
 
         &.selected {
             height: 500px;

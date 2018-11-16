@@ -30,3 +30,113 @@
         }
     }
 }
+
+
+.search {
+    position: relative;
+    padding-bottom: 40px;
+    overflow: hidden;
+    .search-group {
+        position: absolute;
+        left: calc(100% - 110px);
+        @extend %display-flex;
+        align-items: center;
+        width: 100%;
+        margin: 5px 0;
+        padding: 0 10px;
+        box-sizing: border-box;
+        transition: left ease 0.5s;
+
+        @media #{$size-phone} {
+            left: calc(100% - 40px);
+            padding: 0;
+        }
+    }
+
+    @media #{$size-tablet} {
+        font-size: 0.8em;
+    }
+
+    &__input {
+        flex: 1;
+        padding: 9px 15px;
+        margin: 0;
+        border: none;
+    }
+    &__button {
+        background: mix($mainColour, $backgroundColour, 20) url('./../../assets/images/search-16.png') no-repeat 6px 4px;
+        padding: 0 12px;
+        padding-left: 28px;
+        height: 24px;
+        margin: 0;
+        color: $mainColour;
+        border-radius: 16px;
+        line-height: 24px;
+        cursor: pointer;
+
+        &::after {
+            content: "Search";
+        }
+
+        @media #{$size-phone} {
+            padding-left: 14px;
+            &::after {
+                content: "";
+            }
+        }
+    }
+    &__submit-button {
+        background: mix($secondaryColour, $backgroundColour, 50);
+        padding: 5px 8px;
+        font-weight: bold;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+
+        @media #{$size-phone} {
+            display: none;
+        }
+    }
+
+    &__select {
+        background: white;
+        background: mix(white, grey, 60);
+        font-family: 'Quicksand', sans-serif;
+        padding: 4px;
+        margin-right: 5px;
+        border: none;
+        border-radius: 15px;
+
+        @media #{$size-phone} {
+            padding: 4px 0;
+        }
+    }
+
+    .cap-front {
+        background: white;
+        padding: 5px 5px;
+        border-radius: 15px 0 0 15px;
+    }
+    .cap-back {
+        background: white;
+        padding: 4px 5px;
+        border-radius: 0 15px 15px 0;
+
+        label {
+            @media #{$size-phone} {
+                display: none;
+            }
+        }
+    }
+
+
+    .check-group {
+        .check {
+            display: none;
+        }
+        input:checked + div {
+            left: 0;
+        }
+    }
+}
+
