@@ -1,0 +1,33 @@
+@import './../../../globals';
+
+.nav {
+    @extend %display-flex;
+    align-items: center;
+    background: mix($secondaryColour, mix($mainColour, black, 80), 50);
+    padding: 10px 0;
+
+    .icon {
+        background: $mainColour;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin: 0 10px;       
+
+        img {
+            width: 45px;
+            height: 45px;
+            margin: -3px;
+        }
+    }
+
+
+    .brand {
+        color: white;
+        font-size: 1.2em;
+    }
+
+
+    app-search {
+        flex: 1;
+    }
+}

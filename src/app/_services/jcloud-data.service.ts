@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Projects, Project } from '../models/projects.model';
+import { Projects, Project } from '../_models/projects.model';
 
 @Injectable()
 export class JcloudDataService {

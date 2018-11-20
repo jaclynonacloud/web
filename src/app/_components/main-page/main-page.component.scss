@@ -1,0 +1,81 @@
+@import './../../../globals';
+
+.main {
+    flex: 1;
+    @extend %display-flex;
+    background: $backgroundColour;
+    width: 80vw;
+    max-width: 1600px;
+    min-height: 100vh;
+    margin: auto;
+
+    @media #{$size-tablet} {
+        flex-flow: column;
+    }
+
+    @media #{$size-phone} {
+        width: 100vw;
+    }
+}
+
+app-sidebar {
+    // background: orange;
+    @extend %display-flex;
+    flex-flow: column;
+    align-items: center;
+    width: 15vw;
+    min-width: 250px;
+    max-width: 400px;
+    padding: 5px;
+    box-sizing: border-box;
+
+    @media #{$size-tablet} {
+        position: relative;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        padding: 0;
+        margin: auto;
+        max-width: unset;
+
+        .btnNext {
+            position: relative;
+            bottom: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 15px;
+            background: grey;
+            content: "\23F7";
+            width: 50px;
+            height: 50px;
+            color: #1b1b1b;
+            font-size: 1.3em;
+            border-radius: 50%;
+            &:hover {
+                background: $secondaryColour;
+            }
+        }
+    }
+
+    @media #{$size-phone} {
+        height: 100vh;
+    }
+}
+
+
+.content {
+    position: relative;
+    flex: 1;
+    @extend %display-flex;
+    flex-flow: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+app-projects {
+    flex: 1;
+    overflow: auto;
+    margin-top: 5px;
+}

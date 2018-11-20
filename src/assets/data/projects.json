@@ -2,6 +2,7 @@
     "projects" : [
         {
             "name" : "celestials",
+            "category" : "Desktop App",
             "tags" : [
                 "html5", "javascript", "electron"
             ],
@@ -13,6 +14,7 @@
         },
         {
             "name" : "spritesheetr",
+            "category" : "Web",
             "tags" : [
                 "html5", "javascript"
             ],
@@ -24,6 +26,7 @@
         },
         {
             "name" : "Mimic Woods",
+            "category" : "Web",
             "tags" : [
                 "html5", "javascript", "Phaser.js"
             ],
@@ -34,67 +37,78 @@
         },
         {
             "name" : "Active Windows",
+            "category" : "Desktop",
             "tags" : [
                 "C#"
             ],
-             "description" : "An older C# application that allows a windows user to use .mp4 videos to be set as a desktop background.  Supports multiple monitors."
+            "description" : "An older C# application that allows a windows user to use .mp4 videos to be set as a desktop background.  Supports multiple monitors."
         },
         {
             "name" : "Really Long Title OMOMOMOMOMGs",
+            "category" : "Web",
             "tags" : [
                 "C#", "javascript", "electron"
             ]
         },
         {
             "name" : "Fakey Project 1",
+            "category" : "Web",
             "tags" : [
                 "C#", "javascript", "electron"
             ]
         },
         {
             "name" : "Fakey Project 2",
+            "category" : "Web",
             "tags" : [
                 "C#", "javascript", "electron"
             ]
         },
         {
             "name" : "Fakey Project 3",
+            "category" : "Web",
             "tags" : [
                 "C#", "javascript", "electron"
             ]
         },
         {
             "name" : "Really Long 2",
+            "category" : "Web",
             "tags" : [
                 "C#", "javascript", "electron"
             ]
         },
         {
             "name" : "Fakey Project 4",
+            "category" : "Web",
             "tags" : [
                 "C#", "javascript", "electron"
             ]
         },
         {
             "name" : "Fakey Project 5",
+            "category" : "Web",
             "tags" : [
                 "C#", "javascript", "electron"
             ]
         },
         {
             "name" : "Fakey Project 6",
+            "category" : "Web",
             "tags" : [
                 "C#", "javascript", "electron"
             ]
         },
         {
             "name" : "Fakey Project 7",
+            "category" : "Web",
             "tags" : [
                 "C#", "javascript", "electron"
             ]
         },
         {
             "name" : "Fakey Project 8",
+            "category" : "Web",
             "tags" : [
                 "C#", "javascript", "electron"
             ]

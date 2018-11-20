@@ -1,4 +1,4 @@
-@import "./../../globals";
+@import './../../../globals';
 
 .projects {
     flex: 1;
@@ -75,7 +75,7 @@
                     position: absolute;
                     top: 0;
                     right: 0;
-                    background: $mainColour url('./../../assets/images/cross.png') 5px 5px no-repeat;
+                    background: $mainColour url('./../../../assets/images/cross.png') 5px 5px no-repeat;
                     background-size: 35px 35px;
                     width: 35px;
                     height: 35px;
@@ -145,7 +145,6 @@
             box-sizing: border-box;
             pointer-events: none;
 
-           
 
             .row {
                 @extend %display-flex;
@@ -258,7 +257,6 @@
                     }
                 }
                 
-               
 
                 .body {
                     display: none;

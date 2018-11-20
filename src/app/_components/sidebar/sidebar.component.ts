@@ -1,14 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { JcloudDataService } from '../services/jcloud-data.service';
 
 @Component({
-  selector: 'projects',
-  templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.scss']
+  selector: 'app-sidebar',
+  templateUrl: './sidebar.component.html',
+  styleUrls: ['./sidebar.component.scss']
 })
-export class ProjectsComponent implements OnInit {
+export class SidebarComponent implements OnInit {
 
-  constructor(public jcloudData:JcloudDataService) { }
+  constructor() { }
 
   /*----------------------- LIFECYCLE HOOKS --------------------*/
   ngOnInit() {

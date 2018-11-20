@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { JcloudDataService } from './services/jcloud-data.service';
+import { JcloudDataService } from './_services/jcloud-data.service';
 
 @Component({
   selector: 'app-root',
