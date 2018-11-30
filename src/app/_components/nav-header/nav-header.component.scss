@@ -3,7 +3,7 @@
 .nav {
     @extend %display-flex;
     align-items: center;
-    background: mix($secondaryColour, mix($mainColour, black, 80), 50);
+    background: $highlightColour;
     padding: 10px 0;
 
     .icon {

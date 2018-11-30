@@ -1,62 +1,24 @@
 <div class="projects">
-    <div class="container">
-        <!-- PROJECT -->
-        <div class="project" *ngFor="let proj of jcloudData.Showcases">
-            <div class="btnClose"></div>
-            <div class="image-container">
-                <img class="project__image image" src="./assets/images/projects/{{ proj.imageSrc }}" [alt]="proj.name" *ngIf="proj.imageSrc">
-            </div>
-            <div class="project__details">
-                <div class="row details">
-                    <h3 class="title">{{ proj.name }}</h3>
-                    <!-- <div class="tags">
-                        <span *ngFor="let tag of proj.tags">{{ tag }}</span>
-                    </div> -->
-                    <div class="tags">
-                        <div><span [innerHTML]="proj.category"></span></div>
-                    </div>
-                </div>
-                <div class="row body">
-                    <div class="description" [innerHTML]="proj.description"></div>
-                    <div class="links">
-                        <div class="links__link github">Github</div>
-                        <div class="links__link external">External</div>
-                        <div class="links__link download">Download</div>
-                    </div>
-                </div>
-            </div>
-            <div class="project__overlay"></div>
-        </div>
-        <!-- /PROJECT -->
-    </div>
-
-    <div class="container-center">
-        <div class="container container--minis">
-            <!-- MINI -->
-            <div class="project project--minis" *ngFor="let proj of jcloudData.Projects">
-                <div class="btnClose"></div>
-                <div class="image-container">
-                    <img class="project__image image" src="#" alt="">
-                </div>
-                <div class="project__details">
-                    <div class="row details">
-                        <h3 class="title">{{ proj.name }}</h3>
-                        <div class="tags">
-                            <div><span [innerHTML]="proj.category"></span></div>
-                        </div>
-                    </div>
-                    <div class="row body">
-                        <div class="description">Description</div>
-                        <div class="links">
-                            <div class="links__link github">Github</div>
-                            <div class="links__link external">External</div>
-                            <div class="links__link download">Download</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="project__overlay"></div>
-            </div>
-            <!-- /MINI -->                
-        </div>
-    </div>
+    <!-- PROJECT -->
+    <!-- <div class="project" *ngFor="let proj of jcloudData.Showcases"> -->
+    <!-- <div class="project" *ngFor="let proj of [{name:'hello'}, {name:'hi'}, {name:'hello'}, {name:'hi'}, {name:'yes'}, {name:'hello'}, {name:'hi'}, {name:'yes'}, {name:'hello'}, {name:'hi'}, {name:'yes'}, {name:'hello'}, {name:'hi'}, {name:'yes'}, {name:'hello'}, {name:'hi'}, {name:'yes'}, {name:'hello'}, {name:'hi'}, {name:'yes'}]">
+        <div class="image-container">
+            <img class="project__image image" src="https://dummyimage.com/600x400/000/fff.png" [alt]="proj.name" *ngIf="proj.imageSrc"> -->
+            <!-- <img class="project__image image" src="./assets/images/projects/{{ proj.imageSrc }}" [alt]="proj.name" *ngIf="proj.imageSrc"> -->
+        <!-- </div> -->
+    <!-- </div> -->
+    <!-- /PROJECT -->
+    <div class="project project--med"></div>
+    <div class="project project--long"></div>
+    <div class="project project--long"></div>
+    <div class="project project--row"></div>
+    <div class="project project--row"></div>
+    <div class="project project--lg"></div>
+    <div class="project project--sm"></div>
+    <div class="project project--sm"></div>
 </div>
+<!-- Separator -->
+<div class="separator">
+    <h3>More</h3>
+</div>
+<!-- /Separator -->
