@@ -1,27 +1,35 @@
 @import './../../../globals';
 
 .nav {
+    position: relative;
     @extend %display-flex;
     align-items: center;
     background: $highlightColour;
-    padding: 10px 0;
+    width: 100%;
+    padding: 5px 0;
+    border-bottom: solid 6px $mainColour;
 
     .icon {
+        position: relative;
+        top: 45px;
+        left: 5px;
         background: $mainColour;
-        width: 40px;
-        height: 40px;
+        width: 80px;
+        height: 80px;
         border-radius: 50%;
         margin: 0 10px;       
+        margin-top: -45px;
 
         img {
-            width: 45px;
-            height: 45px;
-            margin: -3px;
+            width: 85px;
+            height: 85px;
+            margin: -6px -3px;
         }
     }
 
 
     .brand {
+        align-self: flex-end;
         color: white;
         font-size: 1.2em;
     }
@@ -29,5 +37,7 @@
 
     app-search {
         flex: 1;
+        justify-self: flex-end;
+
     }
 }

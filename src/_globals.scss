@@ -65,8 +65,10 @@ $buttonColour: #CEC5E3;
 .container {
     @extend %display-flex;
     flex-flow: column;
-    max-width: 100vw;
+    width: 80vw;
+    max-width: 1600px;
     min-height: 100vh;
+    margin: auto;
 }
 .main {
     flex: 1;

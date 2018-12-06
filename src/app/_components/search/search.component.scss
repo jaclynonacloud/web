@@ -64,7 +64,7 @@
         border: none;
     }
     &__button {
-        background: mix($mainColour, $backgroundColour, 20) url('./../../../assets/images/search-16.png') no-repeat 6px 4px;
+        background: mix($buttonColour, $backgroundColour, 10) url('./../../../assets/images/search-16.png') no-repeat 6px 4px;
         padding: 0 12px;
         padding-left: 28px;
         height: 24px;
