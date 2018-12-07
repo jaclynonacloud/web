@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, EventEmitter } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Projects, Project } from '../_models/projects.model';
 
@@ -12,6 +12,8 @@ export class JcloudDataService {
   private _isLoaded:boolean;
 
   private _activeProject:Project;
+
+  private _onLoaded:EventEmitter<void> = new EventEmitter();
 
   constructor(private _http:HttpClient) { }
 
@@ -28,14 +30,25 @@ export class JcloudDataService {
         this._isLoaded = true;
 
         //get exposed projects
-        this._projects = this._project.projects.filter(proj => (this._project.showcase.indexOf(proj.name) == -1));
+        // this._projects = this._project.projects.filter(proj => (this._project.showcase.indexOf(proj.name) == -1));
+        this._projects = data.projects;
         //get showcased projects
-        this._showcases = this._project.projects.filter(proj => !this._projects.includes(proj));
+        this._showcases = data.projects;
+        // this._showcases = this._project.projects.filter(proj => !this._projects.includes(proj));
+
+        this._onLoaded.emit();
       },
       error => {
         console.log("Could not load!\n" + error);
       }
     );
+  }
+
+  public wait():Promise<void> {
+    if(this._projects != null) return Promise.resolve();
+    return new Promise(async(res, rej) => {
+      this._onLoaded.subscribe(() => res(), error => rej(error));
+    });
   }
   /*----------------------- EVENTS -----------------------------*/
   /*----------------------- OVERRIDES --------------------------*/

@@ -27,7 +27,7 @@ import { ProjectPageComponent } from './_components/project-page/project-page.co
     HttpClientModule,
     RouterModule.forRoot([
       { path: "", component: MainPageComponent },
-      { path: "project/:project", component: ProjectPageComponent },
+      { path: "project/:name", component: ProjectPageComponent },
       { path: "**", redirectTo: "", pathMatch:"full" },
     ])
   ],

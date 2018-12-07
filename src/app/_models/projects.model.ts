@@ -4,11 +4,11 @@ export interface Projects {
 }
 
 export interface Project {
-    name:              string;
-    tags?:              string[];
-    description?:      string;
-    imageSrc?:         string;
-    phoneImageSrc?:    string;
-    githubSrc?:        string;
-    backgroundColour?: string;
+    lookup: string;
+    name: string;
+    socials?: string;
+    description: string;
+    details?: any[];
+    cover?: string;
+    screenshots?: string;
 }

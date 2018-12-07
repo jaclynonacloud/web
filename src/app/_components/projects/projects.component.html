@@ -8,12 +8,31 @@
         <!-- </div> -->
     <!-- </div> -->
     <!-- /PROJECT -->
-    <div class="project project--lg"></div>
+    <!-- <div class="project project--lg">
+        <div class="project__image-container">
+            <img class="project__image" src="/assets/images/projects/link-forest/cover.png" alt="#">
+        </div>
+        <div class="project__content">Project Name</div>
+    </div>
     <div class="project project--sm"></div>
     <div class="project project--sm"></div>
     <div class="project project--sm"></div>
     <div class="project project--long"></div>
-    <div class="project project--sm"></div>
+    <div class="project project--sm"></div> -->
+
+
+
+    <!-- Featured only set to include 6 projects -->
+    <div class="project" *ngFor="let proj of jcloudData.Showcases">
+        <a [routerLink]="['project', proj.name]">
+            <div class="project__image-container">
+                <img class="project__image" [src]="proj.cover" alt="image">
+            </div>
+            <div class="project__content" [innerHTML]="proj.name"></div>
+        </a>
+    </div>
+
+
 </div>
 <!-- Separator -->
 <div class="separator">

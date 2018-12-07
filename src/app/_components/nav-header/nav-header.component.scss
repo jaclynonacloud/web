@@ -3,6 +3,7 @@
 .nav {
     position: relative;
     @extend %display-flex;
+    justify-content: space-between;
     align-items: center;
     background: $highlightColour;
     width: 100%;
