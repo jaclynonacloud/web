@@ -24,11 +24,11 @@
 
     <!-- Featured only set to include 6 projects -->
     <div class="project" *ngFor="let proj of jcloudData.Projects">
-        <a [routerLink]="['project', proj.name]">
+        <a [routerLink]="['project', proj.name || 'empty']">
             <div class="project__image-container">
-                <img class="project__image" [src]="proj.cover" alt="image">
+                <img class="project__image" [src]="proj.cover" [alt]="proj.name || ''">
             </div>
-            <div class="project__content" [innerHTML]="proj.name"></div>
+            <div class="project__content" [innerHTML]="proj.name || 'Coming Soon'"></div>
         </a>
     </div>
 

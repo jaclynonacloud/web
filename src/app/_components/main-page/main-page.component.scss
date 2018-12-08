@@ -58,12 +58,14 @@ app-sidebar {
     overflow: hidden;
 }
 
-
+app-search {
+    background: $backgroundAltColour;
+}
 app-projects {
     flex: 1;
     background: $backgroundAltColour;
     overflow: auto;
-    margin-top: 5px;
+    padding-top: 5px;
     height: max-content;
     @extend %display-flex;
     flex-flow: column;

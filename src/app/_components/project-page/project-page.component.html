@@ -1,41 +1,43 @@
 <div class="container">
     <app-nav-header></app-nav-header>
     <div class="main">
-        <div class="project-modal" *ngIf="project">
+        <div class="project-modal">
         <!-- <div class="project-modal" *ngIf="jcloudData.ActiveProject"> -->
             <ul class="breadcrumbs">
-            <a [routerLink]="['']">jaclynonacloud</a><span>&gt;</span><span [innerHTML]="project.name"></span>
+            <a [routerLink]="['']">jaclynonacloud</a><span>&gt;</span><span [innerHTML]="(project) ? project.name : 'empty'"></span>
             </ul>
-            <header>
-                <h2 class="name" [innerHTML]="project.name"></h2>
-            </header>
-            <div class="display-image">
-                <img src="/assets/images/projects/link-forest/cover.png" alt="display image">
-            </div>
-            <section class="information">
-                <div class="information__links" *ngIf="project.socials">
-                    <div *ngFor="let soc of project.socials">
-                        <a [href]="soc.link" [innerHTML]="soc.name"></a>
-                    </div>
+            <div *ngIf="project">
+                <header>
+                    <h2 class="name" [innerHTML]="project.name"></h2>
+                </header>
+                <div class="display-image">
+                    <img [src]="project.cover" alt="display image" *ngIf="project.cover">
                 </div>
-                <div class="information__content">
-                    <div class="description" [innerHTML]="project.description"></div>
-
-                    <aside class="details" *ngIf="project.details">
-                        <h2 class="details__title">Details</h2>
-                        <div *ngFor="let det of project.details">
-                            <span *ngFor="let key of _objKeys(det)">
-                                <span class="key" [innerHTML]="key"></span>
-                                <span [innerHTML]="(_isArray(det[key])) ? det[key].join(', ') : det[key]"></span>
-                            </span>
+                <section class="information">
+                    <div class="information__links" *ngIf="project.socials">
+                        <div class="link" *ngFor="let soc of project.socials">
+                            <a [href]="soc.link" [innerHTML]="soc.name"></a>
                         </div>
-                    </aside>
-                </div>
-            </section>
+                    </div>
+                    <div class="information__content">
+                        <div class="description" [innerHTML]="project.description"></div>
 
-            <div class="screenshots" *ngIf="project.screenshots">
-                <div class="screenshot" *ngFor="let image of project.screenshots" (click)="showImage(image)">
-                    <img class="screenshot__image" [src]="image" alt="screenshot">
+                        <aside class="details" *ngIf="project.details">
+                            <h2 class="details__title">Details</h2>
+                            <div *ngFor="let det of project.details">
+                                <span *ngFor="let key of _objKeys(det)">
+                                    <span class="key" [innerHTML]="key"></span>
+                                    <span [innerHTML]="(_isArray(det[key])) ? det[key].join(', ') : det[key]"></span>
+                                </span>
+                            </div>
+                        </aside>
+                    </div>
+                </section>
+
+                <div class="screenshots" *ngIf="project.screenshots">
+                    <div class="screenshot" *ngFor="let image of project.screenshots" (click)="showImage(image)">
+                        <img class="screenshot__image" [src]="image" alt="screenshot">
+                    </div>
                 </div>
             </div>
         <!-- </div> -->
@@ -45,10 +47,12 @@
 
 
 <!-- Lightbox -->
-<div class="lightbox" *ngIf="isLightboxOpen">
-    <div class="lightbox__wrapper" *ngFor="let image of project.screenshots">
-        <div class="lightbox__item" (click)="hideLightbox()">        
-            <img class="lightbox__image" [src]="image" alt="project image" *ngIf="getLightboxIndex(image) == lightboxIndex">
+<div *ngIf="project">
+    <div class="lightbox" *ngIf="isLightboxOpen">
+        <div class="lightbox__wrapper" *ngFor="let image of project.screenshots">
+            <div class="lightbox__item" (click)="hideLightbox()">        
+                <img class="lightbox__image" [src]="image" alt="project image" *ngIf="getLightboxIndex(image) == lightboxIndex">
+            </div>
         </div>
     </div>
 </div>

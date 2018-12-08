@@ -1,5 +1,7 @@
 @import './../../../globals';
 
+$linkColumns: 5;
+
 .project-modal {
     flex: 1;
     max-width: calc(100% - 200px);
@@ -63,16 +65,29 @@
         &__links {
             display: grid;
             grid-auto-flow: column;
+            grid-template-columns: repeat($linkColumns, 1fr);
             grid-gap: 5px;
             padding: 5px 0;
             padding-top: 0;
+
+            @for $i from 1 through $linkColumns {
+                .link:nth-child(#{$i}) {
+                    grid-column-start: ($linkColumns + 1) - $i;
+                }
+            }
 
             @media #{$size-phone} {
                 grid-auto-flow: row;
                 min-width: max-content;
                 width: 80%;
                 margin: 0 auto;
-            }
+
+                .link {
+                    grid-column-start: unset !important;
+                    grid-column: span $linkColumns !important;
+                }
+            }            
+
 
             a {
                 background: $mainColour;
@@ -132,7 +147,10 @@
 
                 span {
                     padding-right: 3px;
-                    word-break: break-all;
+
+                    @media #{$size-tablet} {
+                        word-break: break-all;
+                    }
                 }
 
                 .key {

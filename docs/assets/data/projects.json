@@ -1,23 +1,23 @@
 {
     "projects" : [
         {
-            "lookup" : "link-forest",
             "name" : "Link Forest",
             "socials" : [
-                {"name" : "github", "link" : "http://google.ca"},
-                {"name" : "live view", "link" : "http://linkforest.azurewebsites.net/"}
+                { "name" : "github", "link" : "http://google.ca" },
+                { "name" : "live view", "link" : "http://linkforest.azurewebsites.net/" }
             ],
-            "description" : "Link Forest is a .NET Core application that acts as a link dashboard, allowing a user to pin their links to categories and organize them effectively.<br><br>This application includes a client, login, and administration view, with a working backend holding secure username and passwords.<br>Editing and deletion of links is done through query routing using the link's unique id.  Partial views are used for the navigation bar, banner, and timeout overlay.",
+            "description" : "Link Forest is a .NET Core application that acts as a link dashboard, allowing a user to pin their links to categories and organize them effectively.<br><br>This application includes a client, login, and administration view, with a working backend holding secure username and passwords.<br>Editing and deletion of links is done through query routing using the link's unique id.  Partial views are used for the navigation bar, banner, and timeout overlay.<br><br>This application also has a simple login system, with a table of salted and hashed username/passwords that have access to the admin end of the app.",
             "details" : [
-                { "Status" : "Active" },
+                { "Status" : "Complete" },
                 { "Start Date" : "December 1, 2018" },
                 { "End Date" : "December 6, 2018" },
-                { "Technologies" : [".NET Core", "C#", "Sass"] },
+                { "Technologies" : [".NET Core", "C#", "Sass", "MVC", "MySQL"] },
                 { "Version" : "1.0.0" }
             ],
             "cover" : "assets/images/projects/link-forest/cover.png",
             "screenshots" : [
                 "assets/images/projects/link-forest/cover.png", 
+                "assets/images/projects/link-forest/demo0.apng", 
                 "assets/images/projects/link-forest/1.png", 
                 "assets/images/projects/link-forest/2.png",
                 "assets/images/projects/link-forest/3.png",
@@ -28,6 +28,105 @@
                 "assets/images/projects/link-forest/8.png",
                 "assets/images/projects/link-forest/9.png"
             ]
+        },
+        {
+            "name" : "Tech Roster",
+            "socials" : [
+                { "name" : "github", "link" : "https://github.com/jaclynonacloud/TechRoster_Ed" }                
+            ],
+            "description" : "Tech Roster is a MEAN stack application that records course and technology data, and links them in an adminstrative front end, with a MongoDB run backend.<br><br>The front end is built with the Angular 4 framework, and uses routing along with nested components.  A service feeds the Express provided MongoDB data to all the components that need it and peripheral components, like the DeletePopup use EventEmitters to communicate their data back to the main components.<br><br>While a lot of the styling was provided forma previous project, The technology edit styling and delete popup styling are my own, using the original look and feel as direction.",
+            "details" : [
+                { "Status" : "Complete" },
+                { "Start Date" : "November 20, 2018" },
+                { "End Date" : "December 5, 2018" },
+                { "Technologies" : ["MEAN", "MongoDB", "ExpressJS", "Angular 4", "NodeJS", "Sass", "Typescript"] },
+                { "Version" : "1.0.0" }
+            ],
+            "cover" : "assets/images/projects/tech-roster/cover.png",
+            "screenshots" : [
+                "assets/images/projects/tech-roster/cover.png", 
+                "assets/images/projects/tech-roster/1.png", 
+                "assets/images/projects/tech-roster/2.png",
+                "assets/images/projects/tech-roster/3.png",
+                "assets/images/projects/tech-roster/4.png",
+                "assets/images/projects/tech-roster/5.png",
+                "assets/images/projects/tech-roster/6.png",
+                "assets/images/projects/tech-roster/7.png",
+                "assets/images/projects/tech-roster/8.png",
+                "assets/images/projects/tech-roster/9.png",
+                "assets/images/projects/tech-roster/10.png"
+            ]
+        },
+        {
+            "name" : "Photo Album",
+            "socials" : [
+                { "name" : "github", "link" : "https://github.com/jaclynonacloud/PhotoAlbum_Ed" }
+            ],
+            "description" : "Photo Album is a MEAN stack application that displays images to a user and allows them to provide comments to the images.  A thumbnail jumplist gives the user another way to navigate the images.<br><br>This application uses nested components with EventEmitters to communicate interactions the user provides, such as clicking a thumbnail, to main components like the gallery image lightbox.<br>Form validation is achieved using FormGroup and FormControl classes imported from Angular, and backend sanitation also takes place with middleware <a href='https://www.npmjs.com/package/express-sanitizer'>express-sanitizer</a>.<br><br>This was a class assigned project, with pictures and descriptions being provided.  Styling was done using sass and flexbox.",
+            "details" : [
+                { "Status" : "Complete" },
+                { "Start Date" : "October 20, 2018" },
+                { "End Date" : "November 15, 2018" },
+                { "Technologies" : ["MEAN", "MongoDB", "ExpressJS", "Angular 4", "NodeJS", "Sass", "Typescript"] },
+                { "Version" : "1.0.0" }
+            ],
+            "cover" : "assets/images/projects/photo-album/cover.png",
+            "screenshots" : [
+                "assets/images/projects/photo-album/cover.png", 
+                "assets/images/projects/photo-album/demo0.apng",
+                "assets/images/projects/photo-album/demo1.apng",
+                "assets/images/projects/photo-album/demo2.apng",
+                "assets/images/projects/photo-album/0.png", 
+                "assets/images/projects/photo-album/1.png", 
+                "assets/images/projects/photo-album/2.png",
+                "assets/images/projects/photo-album/3.png",
+                "assets/images/projects/photo-album/4.png",
+                "assets/images/projects/photo-album/5.png"
+            ]
+        },
+        {
+            "name" : "Quotes Admin",
+            "socials" : [],
+            "description" : "Quotes Admin is .NET Core administrative web application that communicates with a MySQL backend via an API controller.  This app has the simple task of allowing a user to create a quote, and delete a quote using a dropdown.<br><br>The API controller listens on a separate port for get and delete requests and manipulates the MySQL database accordingly.<br><br>Error checking is done with Data Annotations.",
+            "details" : [
+                { "Status" : "Complete" },
+                { "Start Date" : "November 3, 2018" },
+                { "End Date" : "November 15, 2018" },
+                { "Technologies" : [".NET Core", "C#", "Sass", "MVC", "MySQL"] },
+                { "Version" : "1.0.0" }
+            ],
+            "cover" : "assets/images/projects/quotes-admin/cover.png",
+            "screenshots" : [
+                "assets/images/projects/quotes-admin/cover.png", 
+                "assets/images/projects/quotes-admin/demo0.apng",
+                "assets/images/projects/quotes-admin/cover.png", 
+                "assets/images/projects/quotes-admin/0.png", 
+                "assets/images/projects/quotes-admin/1.png", 
+                "assets/images/projects/quotes-admin/2.png",
+                "assets/images/projects/quotes-admin/3.png",
+                "assets/images/projects/quotes-admin/4.png"
+            ]
+        },
+        {
+            "name" : "Portfolio Website",
+            "socials" : [],
+            "description" : "This website was created with Angular 4, and populated with JSON data.<br><br>Below includes some design mockups made in Adobe Illustrator for what the page layout might look like.",
+            "details" : [
+                { "Status" : "Active" },
+                { "Start Date " : "November 16, 2018" },
+                { "Technologies" : ["Angular 4", "Sass", "Typescript", "JSON"] }
+            ],
+            "cover" : "assets/images/projects/web/cover.png",
+            "screenshots" : [
+                "assets/images/projects/web/page_landing.png",
+                "assets/images/projects/web/page_project.png",
+                "assets/images/projects/web/page_search.png",
+                "assets/images/projects/web/0.png",
+                "assets/images/projects/web/1.png"
+            ]
+        },
+        {
+            
         }
     ],
     "showcase" : [
