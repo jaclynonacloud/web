@@ -4,7 +4,8 @@ import { Projects, Project } from '../_models/projects.model';
 
 @Injectable()
 export class JcloudDataService {
-  private static DATA_URL:string = "/assets/data/projects.json";
+  // private static DATA_URL:string = "docs/assets/data/projects.json";
+  private static DATA_URL:string = "assets/data/projects.json";
 
   private _project:Projects;
   private _projects:Project[];
