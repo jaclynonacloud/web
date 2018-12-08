@@ -1,0 +1,122 @@
+{
+    "projects" : [
+        {
+            "name" : "celestials",
+            "category" : "Desktop App",
+            "tags" : [
+                "html5", "javascript", "electron"
+            ],
+            "description" : "A <b>desktop buddies</b> application made with Typescript and electron.<br> This app uses user created and updated json files to determine just about every aspect of a buddy.  Its speed, logic, size, variation, name presets, and how sequences work together are all controlled in a json object.  It is robust, while maintaining simplicity.<br> Currently in development.",
+            "imageSrc" : "celestials.png",
+            "phoneImageSrc" : "celestials-phone.png",
+            "githubSrc" : "https://github.com/jaclynonacloud/celestials",
+            "backgroundColour" : "white"
+        },
+        {
+            "name" : "spritesheetr",
+            "category" : "Web",
+            "tags" : [
+                "html5", "javascript"
+            ],
+            "description" : "A spritesheet building application meant to be simple and easy to use.  Currently in development.",
+            "imageSrc" : "spritesheetr.png",
+            "phoneImageSrc" : "spritesheetr-phone.png",
+            "githubSrc" : "https://github.com/jaclynonacloud/spritesheeter",
+            "backgroundColour" : "#D9D9D9"
+        },
+        {
+            "name" : "Mimic Woods",
+            "category" : "Web",
+            "tags" : [
+                "html5", "javascript", "Phaser.js"
+            ],
+            "description" : "An overly ambitious game in its initial stages that will require the player to make tough choices to survive.",
+            "imageSrc" : "mimic-woods.png",
+            "phoneImageSrc" : "mimic-woods-phone.png",
+            "backgroundColour" : "#262436"
+        },
+        {
+            "name" : "Active Windows",
+            "category" : "Desktop",
+            "tags" : [
+                "C#"
+            ],
+            "description" : "An older C# application that allows a windows user to use .mp4 videos to be set as a desktop background.  Supports multiple monitors."
+        },
+        {
+            "name" : "Really Long Title OMOMOMOMOMGs",
+            "category" : "Web",
+            "tags" : [
+                "C#", "javascript", "electron"
+            ]
+        },
+        {
+            "name" : "Fakey Project 1",
+            "category" : "Web",
+            "tags" : [
+                "C#", "javascript", "electron"
+            ]
+        },
+        {
+            "name" : "Fakey Project 2",
+            "category" : "Web",
+            "tags" : [
+                "C#", "javascript", "electron"
+            ]
+        },
+        {
+            "name" : "Fakey Project 3",
+            "category" : "Web",
+            "tags" : [
+                "C#", "javascript", "electron"
+            ]
+        },
+        {
+            "name" : "Really Long 2",
+            "category" : "Web",
+            "tags" : [
+                "C#", "javascript", "electron"
+            ]
+        },
+        {
+            "name" : "Fakey Project 4",
+            "category" : "Web",
+            "tags" : [
+                "C#", "javascript", "electron"
+            ]
+        },
+        {
+            "name" : "Fakey Project 5",
+            "category" : "Web",
+            "tags" : [
+                "C#", "javascript", "electron"
+            ]
+        },
+        {
+            "name" : "Fakey Project 6",
+            "category" : "Web",
+            "tags" : [
+                "C#", "javascript", "electron"
+            ]
+        },
+        {
+            "name" : "Fakey Project 7",
+            "category" : "Web",
+            "tags" : [
+                "C#", "javascript", "electron"
+            ]
+        },
+        {
+            "name" : "Fakey Project 8",
+            "category" : "Web",
+            "tags" : [
+                "C#", "javascript", "electron"
+            ]
+        }
+    ],
+    "showcase" : [
+        "celestials",
+        "spritesheetr",
+        "Mimic Woods"
+    ]
+}
