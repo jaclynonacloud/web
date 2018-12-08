@@ -15,18 +15,18 @@
                 { "Technologies" : [".NET Core", "C#", "Sass"] },
                 { "Version" : "1.0.0" }
             ],
-            "cover" : "/assets/images/projects/link-forest/cover.png",
+            "cover" : "assets/images/projects/link-forest/cover.png",
             "screenshots" : [
-                "/assets/images/projects/link-forest/cover.png", 
-                "/assets/images/projects/link-forest/1.png", 
-                "/assets/images/projects/link-forest/2.png",
-                "/assets/images/projects/link-forest/3.png",
-                "/assets/images/projects/link-forest/4.png",
-                "/assets/images/projects/link-forest/5.png",
-                "/assets/images/projects/link-forest/6.png",
-                "/assets/images/projects/link-forest/7.png",
-                "/assets/images/projects/link-forest/8.png",
-                "/assets/images/projects/link-forest/9.png"
+                "assets/images/projects/link-forest/cover.png", 
+                "assets/images/projects/link-forest/1.png", 
+                "assets/images/projects/link-forest/2.png",
+                "assets/images/projects/link-forest/3.png",
+                "assets/images/projects/link-forest/4.png",
+                "assets/images/projects/link-forest/5.png",
+                "assets/images/projects/link-forest/6.png",
+                "assets/images/projects/link-forest/7.png",
+                "assets/images/projects/link-forest/8.png",
+                "assets/images/projects/link-forest/9.png"
             ]
         }
     ],
