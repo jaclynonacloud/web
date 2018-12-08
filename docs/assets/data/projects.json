@@ -126,7 +126,24 @@
             ]
         },
         {
-            
+            "name" : "Rain World Hunter Tracker",
+            "socials" : [
+                { "name" : "github", "link" : "https://github.com/jaclynonacloud/rainworld-tracker" },
+                { "name" : "live view", "link" : "https://jaclynonacloud.github.io/rainworld-tracker/" }
+            ],
+            "description" : "Created out of a need I had to take the ambiguity out of scoring points while playing as Hunter in <a href='http://rainworldgame.com/'>Rain World</a>.<br>This application takes a sav.txt file from the game, processes its very human unreadable data, and provides a visual dashboard of your current stats.  It hasn't been put through all the QA ringers, but it seems pretty stable in its current form.<br><br>Application was built with HTML5, CSS, and vanilla Javascript.  It was compiled with Gulp and Babel.",
+            "details" : [
+                { "Status" : "Idle" },
+                { "Technologies" : ["Gulp", "Babel", "HTML5", "Javascript", "CSS"] }
+            ],
+            "cover" : "assets/images/projects/rw-hunter-tracker/cover.png",
+            "screenshots" : [
+                "assets/images/projects/rw-hunter-tracker/cover.png",
+                "assets/images/projects/rw-hunter-tracker/0.png",
+                "assets/images/projects/rw-hunter-tracker/1.png",
+                "assets/images/projects/rw-hunter-tracker/2.png",
+                "assets/images/projects/rw-hunter-tracker/3.png"
+            ]
         }
     ],
     "showcase" : [
