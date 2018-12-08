@@ -5,7 +5,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build -op docs",
+    "build": "ng build",
+    "prod": "ng build -op docs --base-href https://jaclynonacloud.github.io/web/ --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
