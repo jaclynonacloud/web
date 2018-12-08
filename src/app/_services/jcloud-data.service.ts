@@ -41,6 +41,7 @@ export class JcloudDataService {
       },
       error => {
         console.log("Could not load!\n" + error);
+        console.log(error);
       }
     );
   }
