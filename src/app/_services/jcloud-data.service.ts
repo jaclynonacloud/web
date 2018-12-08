@@ -21,6 +21,7 @@ export class JcloudDataService {
   /*----------------------- METHODS ----------------------------*/
   public load():void {
     this._isLoaded = false;
+    console.log("LOADING");
 
     this._http.get<Projects>(JcloudDataService.DATA_URL).subscribe(
       data => {

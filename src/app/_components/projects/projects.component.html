@@ -23,7 +23,7 @@
 
 
     <!-- Featured only set to include 6 projects -->
-    <div class="project" *ngFor="let proj of jcloudData.Showcases">
+    <div class="project" *ngFor="let proj of jcloudData.Projects">
         <a [routerLink]="['project', proj.name]">
             <div class="project__image-container">
                 <img class="project__image" [src]="proj.cover" alt="image">
