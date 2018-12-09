@@ -3,7 +3,7 @@
         {
             "name" : "Link Forest",
             "socials" : [
-                { "name" : "github", "link" : "http://google.ca" },
+                { "name" : "github", "link" : "https://github.com/jaclynonacloud/Link-Forest" },
                 { "name" : "live view", "link" : "http://linkforest.azurewebsites.net/" }
             ],
             "description" : "Link Forest is a .NET Core application that acts as a link dashboard, allowing a user to pin their links to categories and organize them effectively.<br><br>This application includes a client, login, and administration view, with a working backend holding secure username and passwords.<br>Editing and deletion of links is done through query routing using the link's unique id.  Partial views are used for the navigation bar, banner, and timeout overlay.<br><br>This application also has a simple login system, with a table of salted and hashed username/passwords that have access to the admin end of the app.",
