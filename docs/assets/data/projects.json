@@ -85,26 +85,28 @@
             ]
         },
         {
-            "name" : "Quotes Admin",
-            "socials" : [],
-            "description" : "Quotes Admin is .NET Core administrative web application that communicates with a MySQL backend via an API controller.  This app has the simple task of allowing a user to create a quote, and delete a quote using a dropdown.<br><br>The API controller listens on a separate port for get and delete requests and manipulates the MySQL database accordingly.<br><br>Error checking is done with Data Annotations.",
-            "details" : [
-                { "Status" : "Complete" },
-                { "Start Date" : "November 3, 2018" },
-                { "End Date" : "November 15, 2018" },
-                { "Technologies" : [".NET Core", "C#", "Sass", "MVC", "MySQL"] },
-                { "Version" : "1.0.0" }
+            "name" : "spritesheetr",
+            "socials" : [
+                { "name" : "github", "link" : "https://github.com/jaclynonacloud/spritesheetr" },
+                { "name" : "live view", "link" : "https://jaclynonacloud.github.io/spritesheetr/" },
+                { "name" : "sample file", "link" : "assets/files/spritesheet-test.sheetr" }
             ],
-            "cover" : "assets/images/projects/quotes-admin/cover.png",
+            "description" : "A spritesheet building application that uses an intuitive UI to allow a user to upload individual sprite images and manipulate their properties for export.<br>This project uses Angular 4 as the framework, with the <a href='https://html2canvas.hertzen.com/'>html2canvas</a> library to snapshot the final sprite canvas for export.<br><br>This project is still active, and is only partially complete.  The end result will hopefully include a spritesheet cutting interface so that a completed spritesheet can be uploaded and manipulated as well.",
+            "details" : [
+                { "Status" : "Active" },
+                { "Start Date" : "December 9, 2018" },
+                { "Technologies" : ["Angular 4", "Sass", "Typescript"] },
+                { "Version" : "2019.01.01" }
+            ],
+            "cover" : "assets/images/projects/spritesheetr1.png",
             "screenshots" : [
-                "assets/images/projects/quotes-admin/cover.png", 
-                "assets/images/projects/quotes-admin/demo0.apng",
-                "assets/images/projects/quotes-admin/cover.png", 
-                "assets/images/projects/quotes-admin/0.png", 
-                "assets/images/projects/quotes-admin/1.png", 
-                "assets/images/projects/quotes-admin/2.png",
-                "assets/images/projects/quotes-admin/3.png",
-                "assets/images/projects/quotes-admin/4.png"
+                "assets/images/projects/spritesheetr-old.png",
+                "assets/images/projects/demo0.apng",
+                "assets/images/projects/demo1.apng",
+                "assets/images/projects/spritesheetr1.png",
+                "assets/images/projects/spritesheetr2.png",
+                "assets/images/projects/spritesheetr3.png",
+                "assets/images/projects/spritesheetr4.png"
             ]
         },
         {
