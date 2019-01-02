@@ -88,7 +88,7 @@
             "name" : "spritesheetr",
             "socials" : [
                 { "name" : "sample file", "link" : "assets/files/spritesheet-test.sheetr" },
-                { "name" : "github", "link" : "https://github.com/jaclynonacloud/spritesheetr" }
+                { "name" : "github", "link" : "https://github.com/jaclynonacloud/spritesheetr.png" }
             ],
             "description" : "A spritesheet building application that uses an intuitive UI to allow a user to upload individual sprite images and manipulate their properties for export.<br>This project uses Angular 4 as the framework, with the <a href='https://html2canvas.hertzen.com/'>html2canvas</a> library to snapshot the final sprite canvas for export.<br><br>This project is still active, and is only partially complete.  The end result will hopefully include a spritesheet cutting interface so that a completed spritesheet can be uploaded and manipulated as well.",
             "details" : [
