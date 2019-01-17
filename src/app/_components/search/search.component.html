@@ -3,15 +3,12 @@
   <label class="check-group">
     <input class="check" type="checkbox" checked>
     <div class="search-group">
-      <input class="search__input" type="text" placeholder="Search Projects...">
+      <input class="search__input" type="text" placeholder="Search Projects..." (keyup)="onChangeText($event)">
       <div class="cap-back">
-        <select class="search__select" id="search-select">
-          <option value="">All</option>
-          <option value="web">Web Apps</option>
-          <option value="game">Games</option>
-          <option value="3d">3D Models</option>
+        <select class="search__select" id="search-select" (change)="onChangeType($event)">
+          <option [value]="SearchOptions[key]" [innerHTML]="key" *ngFor="let key of SearchOptionKeys"></option>
         </select>
-        <button class="search__submit-button">Search</button>
+        <!-- <button class="search__submit-button">Search</button> -->
       </div>
     </div>
   </label>

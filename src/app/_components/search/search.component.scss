@@ -37,8 +37,8 @@
     padding-bottom: 40px;
     overflow: hidden;
     .search-group {
-        position: absolute;
-        left: calc(100% - 110px);
+        // position: absolute;
+        // left: calc(100% - 110px);
         @extend %display-flex;
         align-items: center;
         width: 100%;
@@ -141,9 +141,9 @@
         .check {
             display: none;
         }
-        input:checked + div {
-            left: 0;
-        }
+        // input:checked + div {
+        //     left: 0;
+        // }
     }
 }
 

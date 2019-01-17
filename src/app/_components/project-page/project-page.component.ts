@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit, HostListener, ViewEncapsulation } from '@angular/core';
 import { JcloudDataService } from '../../_services/jcloud-data.service';
 import { ActivatedRoute } from '@angular/router';
 import { Project } from '../../_models/projects.model';
@@ -6,7 +6,8 @@ import { Project } from '../../_models/projects.model';
 @Component({
   selector: 'app-project-page',
   templateUrl: './project-page.component.html',
-  styleUrls: ['./project-page.component.scss']
+  styleUrls: ['./project-page.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class ProjectPageComponent implements OnInit {
 
@@ -24,33 +25,16 @@ export class ProjectPageComponent implements OnInit {
   constructor(public jcloudData:JcloudDataService, private _route:ActivatedRoute) { }
 
   ngOnInit() {
-    //testing
-    // this.screenshots = [
-    //   '/assets/images/projects/link-forest/1.png', 
-    //   '/assets/images/projects/link-forest/2.png',
-    //   '/assets/images/projects/link-forest/3.png',
-    //   '/assets/images/projects/link-forest/4.png',
-    //   '/assets/images/projects/link-forest/4.png',
-    //   '/assets/images/projects/link-forest/5.png',
-    //   '/assets/images/projects/link-forest/6.png',
-    //   '/assets/images/projects/link-forest/7.png',
-    //   '/assets/images/projects/link-forest/8.png',
-    //   '/assets/images/projects/link-forest/9.png'
-    // ];
-
 
     //get project details
     this._route.params.subscribe(
       data => {
         const name = data.name;
-        console.log(name);
 
         //wait for project data to load
         this.jcloudData.wait()
         .then(() => {
-          console.log(this.jcloudData.Projects);
           this.project = this.jcloudData.Projects.filter(p => p.name == name)[0];
-          console.log(this.project);
         });
       },
       error => {

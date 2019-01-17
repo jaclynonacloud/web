@@ -1,29 +1,7 @@
-<div class="projects">
-    <!-- PROJECT -->
-    <!-- <div class="project" *ngFor="let proj of jcloudData.Showcases"> -->
-    <!-- <div class="project" *ngFor="let proj of [{name:'hello'}, {name:'hi'}, {name:'hello'}, {name:'hi'}, {name:'yes'}, {name:'hello'}, {name:'hi'}, {name:'yes'}, {name:'hello'}, {name:'hi'}, {name:'yes'}, {name:'hello'}, {name:'hi'}, {name:'yes'}, {name:'hello'}, {name:'hi'}, {name:'yes'}, {name:'hello'}, {name:'hi'}, {name:'yes'}]">
-        <div class="image-container">
-            <img class="project__image image" src="https://dummyimage.com/600x400/000/fff.png" [alt]="proj.name" *ngIf="proj.imageSrc"> -->
-            <!-- <img class="project__image image" src="./assets/images/projects/{{ proj.imageSrc }}" [alt]="proj.name" *ngIf="proj.imageSrc"> -->
-        <!-- </div> -->
-    <!-- </div> -->
-    <!-- /PROJECT -->
-    <!-- <div class="project project--lg">
-        <div class="project__image-container">
-            <img class="project__image" src="/assets/images/projects/link-forest/cover.png" alt="#">
-        </div>
-        <div class="project__content">Project Name</div>
-    </div>
-    <div class="project project--sm"></div>
-    <div class="project project--sm"></div>
-    <div class="project project--sm"></div>
-    <div class="project project--long"></div>
-    <div class="project project--sm"></div> -->
-
-
-
-    <!-- Featured only set to include 6 projects -->
-    <div class="project" *ngFor="let proj of jcloudData.Projects">
+<div class="featured-text" *ngIf="!isSearching">Featured</div>
+<div class="projects" *ngIf="!isSearching">
+    <!-- Get showcased projects -->
+    <div class="project" *ngFor="let proj of showcases">
         <a [routerLink]="['project', proj.name || 'empty']">
             <div class="project__image-container">
                 <img class="project__image" [src]="proj.cover" [alt]="proj.name || ''">
@@ -31,11 +9,24 @@
             <div class="project__content" [innerHTML]="proj.name || 'Coming Soon'"></div>
         </a>
     </div>
-
-
 </div>
-<!-- Separator -->
-<div class="separator">
+
+
+<div class="featured-text padding-top" *ngIf="isLoadingMore || hasLoadedAll || isSearching">Projects</div>
+<div class="projects leftovers" *ngIf="isLoadingMore || hasLoadedAll || isSearching">
+    <!-- Get leftover projects -->
+    <div class="project" *ngFor="let proj of projects">
+        <a [routerLink]="['project', proj.name || 'empty']">
+            <div class="project__image-container">
+                <img class="project__image" [src]="proj.cover" [alt]="proj.name || ''">
+            </div>
+            <div class="project__content" [innerHTML]="proj.name || 'Coming Soon'"></div>
+        </a>
+    </div>
+</div>
+
+<!-- More -->
+<div class="button" (click)="loadMore()" *ngIf="!hasLoadedAll">
     <h3>More</h3>
 </div>
-<!-- /Separator -->
+<!-- /More -->

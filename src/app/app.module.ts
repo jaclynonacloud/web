@@ -29,7 +29,8 @@ import { ProjectPageComponent } from './_components/project-page/project-page.co
       { path: "", component: MainPageComponent },
       { path: "project/:name", component: ProjectPageComponent },
       { path: "**", redirectTo: "", pathMatch:"full" },
-    ])
+    ],
+    { useHash: true })
   ],
   providers: [JcloudDataService],
   bootstrap: [AppComponent]

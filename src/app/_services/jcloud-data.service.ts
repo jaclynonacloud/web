@@ -1,6 +1,7 @@
 import { Injectable, EventEmitter } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Projects, Project } from '../_models/projects.model';
+import { SearchData } from '../_models/search.model';
 
 @Injectable()
 export class JcloudDataService {
@@ -15,6 +16,7 @@ export class JcloudDataService {
   private _activeProject:Project;
 
   private _onLoaded:EventEmitter<void> = new EventEmitter();
+  public onSearchDataChange:EventEmitter<SearchData> =  new EventEmitter();
 
   constructor(private _http:HttpClient) { }
 
@@ -53,9 +55,15 @@ export class JcloudDataService {
       this._onLoaded.subscribe(() => res(), error => rej(error));
     });
   }
+
+
+  public emitSearchData(searchData:SearchData) {
+    this.onSearchDataChange.emit(searchData);
+  }
   /*----------------------- EVENTS -----------------------------*/
   /*----------------------- OVERRIDES --------------------------*/
   /*----------------------- GETS & SETS ------------------------*/
+  public get ProjectRoot():Projects { return this._project; }
   public get Projects():Project[] { return this._projects; }
   public get Showcases():Project[] { return this._showcases; }
   public get IsLoaded():boolean { return this._isLoaded; }

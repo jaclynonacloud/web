@@ -16,7 +16,7 @@
                 <section class="information">
                     <div class="information__links" *ngIf="project.socials">
                         <div class="link" *ngFor="let soc of project.socials">
-                            <a [href]="soc.link" [innerHTML]="soc.name"></a>
+                            <a [href]="soc.link" target="_new" [innerHTML]="soc.name"></a>
                         </div>
                     </div>
                     <div class="information__content">

@@ -22,11 +22,11 @@ $linkColumns: 5;
 
     // Breadcrumbs
     .breadcrumbs {
-        padding: 0;
+        padding: 5px;
 
-        @media #{$size-tablet} {
-            padding-left: 110px;
-        }
+        // @media #{$size-tablet} {
+        //     padding-left: 110px;
+        // }
 
         & > * {
             padding-right: 3px;
@@ -61,6 +61,11 @@ $linkColumns: 5;
     // information
     .information {
         padding: 20px 0;
+
+        blockquote {
+            padding-left: 15px;
+            border-left: solid 1px $highlightColour;
+        }
 
         &__links {
             display: grid;

@@ -36,6 +36,20 @@
     }
 
 
+    @media #{$size-tablet} {
+        flex-flow: column-reverse;
+        justify-content: flex-start;
+        align-content: center;
+        padding: 0;
+
+        .icon {
+            // top: 5px;
+            left: unset;
+            margin-bottom: 35px;
+        }
+    }
+
+
     app-search {
         flex: 1;
         justify-self: flex-end;
@@ -45,7 +59,8 @@
             max-width: unset;
         }
         @media #{$size-phone} {
-            padding-right: 10px;
+            max-width: unset;
+            width: 95%;
         }
     }
 }
