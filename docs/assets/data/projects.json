@@ -6,6 +6,9 @@
                 { "name" : "github", "link" : "https://github.com/jaclynonacloud/Link-Forest" },
                 { "name" : "live view", "link" : "http://linkforest.azurewebsites.net/" }
             ],
+            "categories": [
+                "web"
+            ],
             "description" : "Link Forest is a .NET Core application that acts as a link dashboard, allowing a user to pin their links to categories and organize them effectively.<br><br>This application includes a client, login, and administration view, with a working backend holding secure username and passwords.<br>Editing and deletion of links is done through query routing using the link's unique id.  Partial views are used for the navigation bar, banner, and timeout overlay.<br><br>This application also has a simple login system, with a table of salted and hashed username/passwords that have access to the admin end of the app.",
             "details" : [
                 { "Status" : "Complete" },
@@ -34,6 +37,9 @@
             "socials" : [
                 { "name" : "github", "link" : "https://github.com/jaclynonacloud/TechRoster_Ed" }                
             ],
+            "categories": [
+                "web"
+            ],
             "description" : "Tech Roster is a MEAN stack application that records course and technology data, and links them in an adminstrative front end, with a MongoDB run backend.<br><br>The front end is built with the Angular 4 framework, and uses routing along with nested components.  A service feeds the Express provided MongoDB data to all the components that need it and peripheral components, like the DeletePopup use EventEmitters to communicate their data back to the main components.<br><br>While a lot of the styling was provided forma previous project, The technology edit styling and delete popup styling are my own, using the original look and feel as direction.",
             "details" : [
                 { "Status" : "Complete" },
@@ -61,6 +67,9 @@
             "name" : "Photo Album",
             "socials" : [
                 { "name" : "github", "link" : "https://github.com/jaclynonacloud/PhotoAlbum_Ed" }
+            ],
+            "categories": [
+                "web"
             ],
             "description" : "Photo Album is a MEAN stack application that displays images to a user and allows them to provide comments to the images.  A thumbnail jumplist gives the user another way to navigate the images.<br><br>This application uses nested components with EventEmitters to communicate interactions the user provides, such as clicking a thumbnail, to main components like the gallery image lightbox.<br>Form validation is achieved using FormGroup and FormControl classes imported from Angular, and backend sanitation also takes place with middleware <a href='https://www.npmjs.com/package/express-sanitizer'>express-sanitizer</a>.<br><br>This was a class assigned project, with pictures and descriptions being provided.  Styling was done using sass and flexbox.",
             "details" : [
@@ -91,6 +100,9 @@
                 { "name" : "github", "link" : "https://github.com/jaclynonacloud/spritesheetr" },
                 { "name" : "live view", "link" : "https://jaclynonacloud.github.io/spritesheetr/" }
             ],
+            "categories": [
+                "web"
+            ],
             "description" : "A spritesheet building application that uses an intuitive UI to allow a user to upload individual sprite images and manipulate their properties for export.<br>This project uses Angular 4 as the framework, with the <a href='https://html2canvas.hertzen.com/'>html2canvas</a> library to snapshot the final sprite canvas for export.<br><br>This project is still active, and is only partially complete.  The end result will hopefully include a spritesheet cutting interface so that a completed spritesheet can be uploaded and manipulated as well.",
             "details" : [
                 { "Status" : "Active" },
@@ -112,6 +124,9 @@
         {
             "name" : "Portfolio Website",
             "socials" : [],
+            "categories": [
+                "web"
+            ],
             "description" : "This website was created with Angular 4, and populated with JSON data.<br><br>Below includes some design mockups made in Adobe Illustrator for what the page layout might look like.",
             "details" : [
                 { "Status" : "Active" },
@@ -131,12 +146,18 @@
             "name" : "Rain World Hunter Tracker",
             "socials" : [
                 { "name" : "github", "link" : "https://github.com/jaclynonacloud/rainworld-tracker" },
+                { "name" : "releases", "link" : "https://github.com/jaclynonacloud/rainworld-tracker/releases" },
                 { "name" : "live view", "link" : "https://jaclynonacloud.github.io/rainworld-tracker/" }
             ],
-            "description" : "Created out of a need I had to take the ambiguity out of scoring points while playing as Hunter in <a href='http://rainworldgame.com/'>Rain World</a>.<br>This application takes a sav.txt file from the game, processes its very human unreadable data, and provides a visual dashboard of your current stats.  It hasn't been put through all the QA ringers, but it seems pretty stable in its current form.<br><br>Application was built with HTML5, CSS, and vanilla Javascript.  It was compiled with Gulp and Babel.",
+            "categories": [
+                "web",
+                "desktop"
+            ],
+            "description" : "Created out of a need I had to take the ambiguity out of scoring points while playing as Hunter in <a href='http://rainworldgame.com/'>Rain World</a>.<br>This application takes a sav.txt file from the game, processes its very human unreadable data, and provides a visual dashboard of your current stats.  It hasn't been put through all the QA ringers, but it seems pretty stable in its current form.<br><br>Application was built with HTML5, CSS, and vanilla Javascript.  It was compiled with Gulp and Babel.<br><br><blockquote>The Rain World speedrunning community uses this app to help determine what their score count might be at any given time during their run.</blockquote>",
             "details" : [
-                { "Status" : "Idle" },
-                { "Technologies" : ["Gulp", "Babel", "HTML5", "Javascript", "CSS"] }
+                { "Status" : "Active" },
+                { "Version" : "v1.0.1" },
+                { "Technologies" : ["Gulp", "Babel", "HTML5", "Javascript", "CSS", "Electron"] }
             ],
             "cover" : "assets/images/projects/rw-hunter-tracker/cover.png",
             "screenshots" : [
@@ -149,6 +170,9 @@
         }
     ],
     "showcase" : [
-        "Link Forest"
+        "Rain World Hunter Tracker",
+        "spritesheetr",
+        "Link Forest",
+        "Portfolio Website"
     ]
 }
