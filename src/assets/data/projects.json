@@ -153,7 +153,7 @@
                 { "Start Date " : "November 16, 2018" },
                 { "Technologies" : ["Angular 4", "Sass", "Typescript", "JSON"] }
             ],
-            "cover" : "assets/images/projects/web/cover.png",
+            "cover" : "assets/images/projects/web/website/cover.png",
             "screenshots" : [
                 "assets/images/projects/web/website/page_landing.png",
                 "assets/images/projects/web/website/page_project.png",
