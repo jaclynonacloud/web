@@ -10,7 +10,7 @@ import { SearchData } from '../../_models/search.model';
 })
 export class ProjectsComponent implements OnInit {
 
-  public static LOAD_INCREMENT:number = 2;
+  public static LOAD_INCREMENT:number = 5;
   public static SEARCH_LOAD_INCREMENT:number = 8;
 
 

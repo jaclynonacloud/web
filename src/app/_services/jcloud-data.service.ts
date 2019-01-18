@@ -2,6 +2,7 @@ import { Injectable, EventEmitter } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Projects, Project } from '../_models/projects.model';
 import { SearchData } from '../_models/search.model';
+import { Router } from '@angular/router';
 
 @Injectable()
 export class JcloudDataService {
@@ -18,7 +19,7 @@ export class JcloudDataService {
   private _onLoaded:EventEmitter<void> = new EventEmitter();
   public onSearchDataChange:EventEmitter<SearchData> =  new EventEmitter();
 
-  constructor(private _http:HttpClient) { }
+  constructor(private _http:HttpClient, private _route:Router) { }
 
   /*----------------------- LIFECYCLE HOOKS --------------------*/
   /*----------------------- METHODS ----------------------------*/
@@ -59,6 +60,17 @@ export class JcloudDataService {
 
   public emitSearchData(searchData:SearchData) {
     this.onSearchDataChange.emit(searchData);
+  }
+
+
+  public negotiateLink(link:string) {
+    //if this is a swf, route us to the swf-helper
+    if(link.indexOf("/swfs/") != -1) {
+      //route us to the swf-helper
+      return '/#/swf/' + encodeURIComponent(link);
+    }
+
+    return link;
   }
   /*----------------------- EVENTS -----------------------------*/
   /*----------------------- OVERRIDES --------------------------*/

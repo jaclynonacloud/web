@@ -122,6 +122,26 @@
             ]
         },
         {
+            "name" : "RW Level Editor",
+            "socials" : [
+            ],
+            "categories": [
+                "web"
+            ],
+            "description" : "Still very much a work-in-progress, RW Level Editor is a web application that is designed to help users build <a href='http://rainworldgame.com/'>Rain World</a> levels.  It was designed out of a desire to have an easier interface to build levels with than the official one that was released to the public.  <br><br>So far, only the geometry portion of this project has a good amount of work completed.  This is a big project.",
+            "details" : [
+                { "Status" : "Active" },
+                { "Start Date" : "January 6, 2019" },
+                { "Technologies" : ["Gulp", "Babel", "HTML5", "Javascript", "Sass"] }
+            ],
+            "cover" : "assets/images/projects/_web/rw-level-editor/cover.png",
+            "screenshots" : [
+                "assets/images/projects/_web/rw-level-editor/cover.png",
+                "assets/images/projects/_web/rw-level-editor/demo0.apng",
+                "assets/images/projects/_web/rw-level-editor/0.png"
+            ]
+        },
+        {
             "name" : "Portfolio Website",
             "socials" : [],
             "categories": [
@@ -167,11 +187,98 @@
                 "assets/images/projects/rw-hunter-tracker/2.png",
                 "assets/images/projects/rw-hunter-tracker/3.png"
             ]
+        },
+
+
+
+
+
+        {
+            "name" : "Dragon Child Creator",
+            "socials" : [
+                { "name" : "github", "link" : "https://github.com/jaclynonacloud/DragonChild-Creator" },
+                { "name" : "live view", "link" : "assets/swfs/creator.swf" }
+            ],
+            "categories": [
+                "desktop",
+                "flash"
+            ],
+            "description" : "This application was created in Flash when I was looking to try to create a 'Creator' application that would take MovieClip data and figure out how to structure its code without a creative user having to go into an ActionScript3.0 file and fiddle with arrays and numbers.<br>All the interfaces are custom made, with only the PNGEncode class being imported, as that's a bit above my comfort zone.",
+            "details" : [
+                { "Status" : "Complete" },
+                { "Start Date " : "March 19, 2017" },
+                { "End Date " : "May 24, 2017" },
+                { "Technologies" : ["Adobe Flash", "ActionScript3.0"] }
+            ],
+            "cover" : "assets/images/projects/_flash/dragon-child-creator/cover.png",
+            "screenshots" : [
+                "assets/images/projects/_flash/dragon-child-creator/cover.png",
+                "assets/images/projects/_flash/dragon-child-creator/demo0.apng",
+                "assets/images/projects/_flash/dragon-child-creator/demo1.apng",
+                "assets/images/projects/_flash/dragon-child-creator/0.png",
+                "assets/images/projects/_flash/dragon-child-creator/1.png",
+                "assets/images/projects/_flash/dragon-child-creator/2.png"
+            ]
+        },
+        {
+            "name" : "Leaky Faucets",
+            "socials" : [
+                { "name" : "github", "link" : "https://github.com/jaclynonacloud/Water-Conservation-Game" },
+                { "name" : "live view", "link" : "assets/swfs/WaterConservationGame.swf" }
+            ],
+            "categories": [
+                "desktop",
+                "flash"
+            ],
+            "description" : "This was a client project during college where they wanted an interactive game surrounding the idea of teaching users a little bit about water conservation.<br>My task was the programming; the art was done by other talented individuals.<br>The game was staged in Adobe Flash Professional, and built in FlashDevelop.<br><br>This was my first crack at completing a fully-functional game, with sound, persisting data and all the other fun management that comes with game building.<br><br>Team members: Jaclyn Staples, Craig Smith, Colby MacPhail, Ronan Wallebeck, Thomas Webber",
+            "details" : [
+                { "Status" : "Complete" },
+                { "End Date " : "April 22, 2014" },
+                { "Technologies" : ["Adobe Flash", "ActionScript3.0"] }
+            ],
+            "cover" : "assets/images/projects/_flash/water-conservation/cover.png",
+            "screenshots" : [
+                "assets/images/projects/_flash/water-conservation/cover.png",
+                "assets/images/projects/_flash/water-conservation/demo0.apng",
+                "assets/images/projects/_flash/water-conservation/0.png",
+                "assets/images/projects/_flash/water-conservation/1.png",
+                "assets/images/projects/_flash/water-conservation/2.png",
+                "assets/images/projects/_flash/water-conservation/3.png"
+            ]
+        },
+        {
+            "name" : "Bunny Gums",
+            "socials" : [
+                { "name" : "github", "link" : "https://github.com/jaclynonacloud/Bunny-Gums" },
+                { "name" : "live view", "link" : "assets/swfs/BunnyGumsComp.swf" }
+            ],
+            "categories": [
+                "desktop",
+                "flash"
+            ],
+            "description" : "This game was built to be used on Android devices.  Made in FlashDevelop as an Adobe AIR application, this game tests your memory reflexes by seeing if you can remember a colour sequence without being given direct feedback on what colours you've already selected.<br><br>The concept was neat, but a bit unpolished.<br><br>The high score functionality was never fully implemented.",
+            "details" : [
+                { "Status" : "Complete" },
+                { "End Date " : "December 13, 2013" },
+                { "Technologies" : ["Adobe Flash", "ActionScript3.0"] }
+            ],
+            "cover" : "assets/images/projects/_flash/bunny-gums/cover.png",
+            "screenshots" : [
+                "assets/images/projects/_flash/bunny-gums/cover.png",
+                "assets/images/projects/_flash/bunny-gums/demo0.apng",
+                "assets/images/projects/_flash/bunny-gums/0.png",
+                "assets/images/projects/_flash/bunny-gums/1.png",
+                "assets/images/projects/_flash/bunny-gums/2.png",
+                "assets/images/projects/_flash/bunny-gums/3.png",
+                "assets/images/projects/_flash/bunny-gums/4.png"
+            ]
         }
+
     ],
     "showcase" : [
         "Rain World Hunter Tracker",
         "spritesheetr",
+        "RW Level Editor",
         "Link Forest",
         "Portfolio Website"
     ]

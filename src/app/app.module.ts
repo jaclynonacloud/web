@@ -11,6 +11,7 @@ import { NavHeaderComponent } from './_components/nav-header/nav-header.componen
 import { SearchComponent } from './_components/search/search.component';
 import { MainPageComponent } from './_components/main-page/main-page.component';
 import { ProjectPageComponent } from './_components/project-page/project-page.component';
+import { SwfViewerComponent } from './_components/_helpers/swf-viewer/swf-viewer.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ProjectPageComponent } from './_components/project-page/project-page.co
     NavHeaderComponent,
     SearchComponent,
     MainPageComponent,
-    ProjectPageComponent
+    ProjectPageComponent,
+    SwfViewerComponent
   ],
   imports: [
     BrowserModule,
@@ -28,6 +30,7 @@ import { ProjectPageComponent } from './_components/project-page/project-page.co
     RouterModule.forRoot([
       { path: "", component: MainPageComponent },
       { path: "project/:name", component: ProjectPageComponent },
+      { path: "swf/:file", component:SwfViewerComponent },
       { path: "**", redirectTo: "", pathMatch:"full" },
     ],
     { useHash: true })

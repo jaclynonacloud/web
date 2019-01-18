@@ -94,13 +94,14 @@ $linkColumns: 5;
             }            
 
 
-            a {
+            a, .link {
                 background: $mainColour;
                 @extend %display-flex-center;
                 width: 100%;
                 min-height: 25px;
                 color: white;
                 transition: ease border-radius 0.25s;
+                cursor: pointer;
 
                 &:hover {
                     background: $highlightColour;
@@ -220,6 +221,7 @@ $linkColumns: 5;
     right: 0;
     bottom: 0;
     cursor: pointer;
+    z-index: 40;
 
     &__wrapper {
         position: fixed;
