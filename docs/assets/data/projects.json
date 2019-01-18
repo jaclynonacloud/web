@@ -17,19 +17,19 @@
                 { "Technologies" : [".NET Core", "C#", "Sass", "MVC", "MySQL"] },
                 { "Version" : "1.0.0" }
             ],
-            "cover" : "assets/images/projects/link-forest/cover.png",
+            "cover" : "assets/images/projects/web/link-forest/cover.png",
             "screenshots" : [
-                "assets/images/projects/link-forest/cover.png", 
-                "assets/images/projects/link-forest/demo0.apng", 
-                "assets/images/projects/link-forest/1.png", 
-                "assets/images/projects/link-forest/2.png",
-                "assets/images/projects/link-forest/3.png",
-                "assets/images/projects/link-forest/4.png",
-                "assets/images/projects/link-forest/5.png",
-                "assets/images/projects/link-forest/6.png",
-                "assets/images/projects/link-forest/7.png",
-                "assets/images/projects/link-forest/8.png",
-                "assets/images/projects/link-forest/9.png"
+                "assets/images/projects/web/link-forest/cover.png", 
+                "assets/images/projects/web/link-forest/demo0.apng", 
+                "assets/images/projects/web/link-forest/1.png", 
+                "assets/images/projects/web/link-forest/2.png",
+                "assets/images/projects/web/link-forest/3.png",
+                "assets/images/projects/web/link-forest/4.png",
+                "assets/images/projects/web/link-forest/5.png",
+                "assets/images/projects/web/link-forest/6.png",
+                "assets/images/projects/web/link-forest/7.png",
+                "assets/images/projects/web/link-forest/8.png",
+                "assets/images/projects/web/link-forest/9.png"
             ]
         },
         {
@@ -48,19 +48,19 @@
                 { "Technologies" : ["MEAN", "MongoDB", "ExpressJS", "Angular 4", "NodeJS", "Sass", "Typescript"] },
                 { "Version" : "1.0.0" }
             ],
-            "cover" : "assets/images/projects/tech-roster/cover.png",
+            "cover" : "assets/images/projects/web/tech-roster/cover.png",
             "screenshots" : [
-                "assets/images/projects/tech-roster/cover.png", 
-                "assets/images/projects/tech-roster/1.png", 
-                "assets/images/projects/tech-roster/2.png",
-                "assets/images/projects/tech-roster/3.png",
-                "assets/images/projects/tech-roster/4.png",
-                "assets/images/projects/tech-roster/5.png",
-                "assets/images/projects/tech-roster/6.png",
-                "assets/images/projects/tech-roster/7.png",
-                "assets/images/projects/tech-roster/8.png",
-                "assets/images/projects/tech-roster/9.png",
-                "assets/images/projects/tech-roster/10.png"
+                "assets/images/projects/web/tech-roster/cover.png", 
+                "assets/images/projects/web/tech-roster/1.png", 
+                "assets/images/projects/web/tech-roster/2.png",
+                "assets/images/projects/web/tech-roster/3.png",
+                "assets/images/projects/web/tech-roster/4.png",
+                "assets/images/projects/web/tech-roster/5.png",
+                "assets/images/projects/web/tech-roster/6.png",
+                "assets/images/projects/web/tech-roster/7.png",
+                "assets/images/projects/web/tech-roster/8.png",
+                "assets/images/projects/web/tech-roster/9.png",
+                "assets/images/projects/web/tech-roster/10.png"
             ]
         },
         {
@@ -79,18 +79,18 @@
                 { "Technologies" : ["MEAN", "MongoDB", "ExpressJS", "Angular 4", "NodeJS", "Sass", "Typescript"] },
                 { "Version" : "1.0.0" }
             ],
-            "cover" : "assets/images/projects/photo-album/cover.png",
+            "cover" : "assets/images/projects/web/photo-album/cover.png",
             "screenshots" : [
-                "assets/images/projects/photo-album/cover.png", 
-                "assets/images/projects/photo-album/demo0.apng",
-                "assets/images/projects/photo-album/demo1.apng",
-                "assets/images/projects/photo-album/demo2.apng",
-                "assets/images/projects/photo-album/0.png", 
-                "assets/images/projects/photo-album/1.png", 
-                "assets/images/projects/photo-album/2.png",
-                "assets/images/projects/photo-album/3.png",
-                "assets/images/projects/photo-album/4.png",
-                "assets/images/projects/photo-album/5.png"
+                "assets/images/projects/web/photo-album/cover.png", 
+                "assets/images/projects/web/photo-album/demo0.apng",
+                "assets/images/projects/web/photo-album/demo1.apng",
+                "assets/images/projects/web/photo-album/demo2.apng",
+                "assets/images/projects/web/photo-album/0.png", 
+                "assets/images/projects/web/photo-album/1.png", 
+                "assets/images/projects/web/photo-album/2.png",
+                "assets/images/projects/web/photo-album/3.png",
+                "assets/images/projects/web/photo-album/4.png",
+                "assets/images/projects/web/photo-album/5.png"
             ]
         },
         {
@@ -110,15 +110,15 @@
                 { "Technologies" : ["Angular 4", "Sass", "Typescript"] },
                 { "Version" : "2019.01.01" }
             ],
-            "cover" : "assets/images/projects/spritesheetr/spritesheetr1.png",
+            "cover" : "assets/images/projects/web/spritesheetr/spritesheetr1.png",
             "screenshots" : [
-                "assets/images/projects/spritesheetr/spritesheetr-old.png",
-                "assets/images/projects/spritesheetr/demo0.apng",
-                "assets/images/projects/spritesheetr/demo1.apng",
-                "assets/images/projects/spritesheetr/spritesheetr1.png",
-                "assets/images/projects/spritesheetr/spritesheetr2.png",
-                "assets/images/projects/spritesheetr/spritesheetr3.png",
-                "assets/images/projects/spritesheetr/spritesheetr4.png"
+                "assets/images/projects/web/spritesheetr/spritesheetr-old.png",
+                "assets/images/projects/web/spritesheetr/demo0.apng",
+                "assets/images/projects/web/spritesheetr/demo1.apng",
+                "assets/images/projects/web/spritesheetr/spritesheetr1.png",
+                "assets/images/projects/web/spritesheetr/spritesheetr2.png",
+                "assets/images/projects/web/spritesheetr/spritesheetr3.png",
+                "assets/images/projects/web/spritesheetr/spritesheetr4.png"
             ]
         },
         {
@@ -134,11 +134,11 @@
                 { "Start Date" : "January 6, 2019" },
                 { "Technologies" : ["Gulp", "Babel", "HTML5", "Javascript", "Sass"] }
             ],
-            "cover" : "assets/images/projects/_web/rw-level-editor/cover.png",
+            "cover" : "assets/images/projects/web/rw-level-editor/cover.png",
             "screenshots" : [
-                "assets/images/projects/_web/rw-level-editor/cover.png",
-                "assets/images/projects/_web/rw-level-editor/demo0.apng",
-                "assets/images/projects/_web/rw-level-editor/0.png"
+                "assets/images/projects/web/rw-level-editor/cover.png",
+                "assets/images/projects/web/rw-level-editor/demo0.apng",
+                "assets/images/projects/web/rw-level-editor/0.png"
             ]
         },
         {
@@ -155,11 +155,11 @@
             ],
             "cover" : "assets/images/projects/web/cover.png",
             "screenshots" : [
-                "assets/images/projects/web/page_landing.png",
-                "assets/images/projects/web/page_project.png",
-                "assets/images/projects/web/page_search.png",
-                "assets/images/projects/web/0.png",
-                "assets/images/projects/web/1.png"
+                "assets/images/projects/web/website/page_landing.png",
+                "assets/images/projects/web/website/page_project.png",
+                "assets/images/projects/web/website/page_search.png",
+                "assets/images/projects/web/website/0.png",
+                "assets/images/projects/web/website/1.png"
             ]
         },
         {
@@ -179,13 +179,13 @@
                 { "Version" : "v1.0.1" },
                 { "Technologies" : ["Gulp", "Babel", "HTML5", "Javascript", "CSS", "Electron"] }
             ],
-            "cover" : "assets/images/projects/rw-hunter-tracker/cover.png",
+            "cover" : "assets/images/projects/web/rw-hunter-tracker/cover.png",
             "screenshots" : [
-                "assets/images/projects/rw-hunter-tracker/cover.png",
-                "assets/images/projects/rw-hunter-tracker/0.png",
-                "assets/images/projects/rw-hunter-tracker/1.png",
-                "assets/images/projects/rw-hunter-tracker/2.png",
-                "assets/images/projects/rw-hunter-tracker/3.png"
+                "assets/images/projects/web/rw-hunter-tracker/cover.png",
+                "assets/images/projects/web/rw-hunter-tracker/0.png",
+                "assets/images/projects/web/rw-hunter-tracker/1.png",
+                "assets/images/projects/web/rw-hunter-tracker/2.png",
+                "assets/images/projects/web/rw-hunter-tracker/3.png"
             ]
         },
 
@@ -210,14 +210,14 @@
                 { "End Date " : "May 24, 2017" },
                 { "Technologies" : ["Adobe Flash", "ActionScript3.0"] }
             ],
-            "cover" : "assets/images/projects/_flash/dragon-child-creator/cover.png",
+            "cover" : "assets/images/projects/flash/dragon-child-creator/cover.png",
             "screenshots" : [
-                "assets/images/projects/_flash/dragon-child-creator/cover.png",
-                "assets/images/projects/_flash/dragon-child-creator/demo0.apng",
-                "assets/images/projects/_flash/dragon-child-creator/demo1.apng",
-                "assets/images/projects/_flash/dragon-child-creator/0.png",
-                "assets/images/projects/_flash/dragon-child-creator/1.png",
-                "assets/images/projects/_flash/dragon-child-creator/2.png"
+                "assets/images/projects/flash/dragon-child-creator/cover.png",
+                "assets/images/projects/flash/dragon-child-creator/demo0.apng",
+                "assets/images/projects/flash/dragon-child-creator/demo1.apng",
+                "assets/images/projects/flash/dragon-child-creator/0.png",
+                "assets/images/projects/flash/dragon-child-creator/1.png",
+                "assets/images/projects/flash/dragon-child-creator/2.png"
             ]
         },
         {
@@ -236,14 +236,14 @@
                 { "End Date " : "April 22, 2014" },
                 { "Technologies" : ["Adobe Flash", "ActionScript3.0"] }
             ],
-            "cover" : "assets/images/projects/_flash/water-conservation/cover.png",
+            "cover" : "assets/images/projects/flash/water-conservation/cover.png",
             "screenshots" : [
-                "assets/images/projects/_flash/water-conservation/cover.png",
-                "assets/images/projects/_flash/water-conservation/demo0.apng",
-                "assets/images/projects/_flash/water-conservation/0.png",
-                "assets/images/projects/_flash/water-conservation/1.png",
-                "assets/images/projects/_flash/water-conservation/2.png",
-                "assets/images/projects/_flash/water-conservation/3.png"
+                "assets/images/projects/flash/water-conservation/cover.png",
+                "assets/images/projects/flash/water-conservation/demo0.apng",
+                "assets/images/projects/flash/water-conservation/0.png",
+                "assets/images/projects/flash/water-conservation/1.png",
+                "assets/images/projects/flash/water-conservation/2.png",
+                "assets/images/projects/flash/water-conservation/3.png"
             ]
         },
         {
@@ -262,15 +262,15 @@
                 { "End Date " : "December 13, 2013" },
                 { "Technologies" : ["Adobe Flash", "ActionScript3.0"] }
             ],
-            "cover" : "assets/images/projects/_flash/bunny-gums/cover.png",
+            "cover" : "assets/images/projects/flash/bunny-gums/cover.png",
             "screenshots" : [
-                "assets/images/projects/_flash/bunny-gums/cover.png",
-                "assets/images/projects/_flash/bunny-gums/demo0.apng",
-                "assets/images/projects/_flash/bunny-gums/0.png",
-                "assets/images/projects/_flash/bunny-gums/1.png",
-                "assets/images/projects/_flash/bunny-gums/2.png",
-                "assets/images/projects/_flash/bunny-gums/3.png",
-                "assets/images/projects/_flash/bunny-gums/4.png"
+                "assets/images/projects/flash/bunny-gums/cover.png",
+                "assets/images/projects/flash/bunny-gums/demo0.apng",
+                "assets/images/projects/flash/bunny-gums/0.png",
+                "assets/images/projects/flash/bunny-gums/1.png",
+                "assets/images/projects/flash/bunny-gums/2.png",
+                "assets/images/projects/flash/bunny-gums/3.png",
+                "assets/images/projects/flash/bunny-gums/4.png"
             ]
         }
 
