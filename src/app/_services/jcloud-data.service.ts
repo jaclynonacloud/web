@@ -67,7 +67,7 @@ export class JcloudDataService {
     //if this is a swf, route us to the swf-helper
     if(link.indexOf("/swfs/") != -1) {
       //route us to the swf-helper
-      return '/#/swf/' + encodeURIComponent(link);
+      return '#/swf/' + encodeURIComponent(link);
     }
 
     return link;
