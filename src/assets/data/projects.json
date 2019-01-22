@@ -124,6 +124,8 @@
         {
             "name" : "RW Level Editor",
             "socials" : [
+                { "name" : "github", "link" : "https://github.com/jaclynonacloud/rw-level-editor" },
+                { "name" : "live view", "link" : "https://jaclynonacloud.github.io/rw-level-editor/" }
             ],
             "categories": [
                 "web"
