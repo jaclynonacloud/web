@@ -92,3 +92,16 @@ $buttonColour: #CEC5E3;
         width: 100vw;
     }
 }
+
+
+a {
+    color: $highlightColour;
+    border-bottom: solid 1px transparent;
+    box-sizing: border-box;
+
+    &:focus,
+    &:hover {
+        color: $secondaryColour;
+        border-bottom: solid 1px $highlightColour;
+    }
+}

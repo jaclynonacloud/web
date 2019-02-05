@@ -40,7 +40,6 @@ export class ProjectsComponent implements OnInit {
       //listen for search data
       this.jcloudData.onSearchDataChange.subscribe((searchData:SearchData) => {
         //organize data by search data
-        console.log("RECEIVED", searchData);
         if(searchData.text != "" || searchData.type != "") {
           this.isSearching = true;
           this.sortProjects(searchData);
@@ -88,7 +87,7 @@ export class ProjectsComponent implements OnInit {
         
     this._leftovers = this.jcloudData.Projects
       .filter(p => !this.jcloudData.ProjectRoot.showcase.includes(p.name))
-      .sort((a, b) => a.name.toUpperCase() < b.name.toUpperCase() ? -1 : 1);
+      // .sort((a, b) => a.name.toUpperCase() < b.name.toUpperCase() ? -1 : 1);
 
     if(this.isSearching) {
       this._leftovers = this.jcloudData.Projects
@@ -112,18 +111,18 @@ export class ProjectsComponent implements OnInit {
   private _testProjectAgainstSearchData(project:Project, searchData:SearchData) {
     if(searchData.text == "" && searchData.type == "") return true;
 
+    let existsInCategory = (searchData.type == "") ? true : false;
+    //test categories
+    for(let i = 0; i < project.categories.length; i++) {
+      if(project.categories[i] == searchData.type) existsInCategory = true;
+    }
+
     //test text
-    if(searchData.text != "") {
+    if(searchData.text != "" && existsInCategory) {
       if(project.name.toLowerCase().indexOf(searchData.text.toLowerCase()) != -1) return true; //test name of project
       if(project.description.toLowerCase().indexOf(searchData.text.toLowerCase()) != -1) return true; //test description of project
     }
-
-    //test categories
-    for(let i = 0; i < project.categories.length; i++) {
-      if(project.categories[i] == searchData.type) return true;
-    }
-    
-    return false;
+    else return existsInCategory;
   }
   /*----------------------- EVENTS -----------------------------*/
   /*----------------------- OVERRIDES --------------------------*/

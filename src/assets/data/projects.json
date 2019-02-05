@@ -190,6 +190,27 @@
                 "assets/images/projects/web/rw-hunter-tracker/3.png"
             ]
         },
+        {
+            "name" : "Vue Calculator",
+            "socials" : [
+                { "name" : "github", "link" : "https://github.com/jaclynonacloud/vue-calculator" },
+                { "name" : "live view", "link" : "https://jaclynonacloud.github.io/vue-calculator/" }
+            ],
+            "categories": [
+                "web"
+            ],
+            "description" : "Created as part of a self-directed course to learn Vue.js, this calculator was my way of trying to build something logical out of something new to me.<br>This app is a simple calculator that responds to button click events, keyboard key inputs, and uses class bindings to indicate the current operator.  The styling is a combination of Flexbox and CSS grids.",
+            "details" : [
+                { "Status" : "Complete" },
+                { "Technologies" : ["Vue.js 2.0", "Javascript", "CSS"] }
+            ],
+            "cover" : "assets/images/projects/web/vue-calculator/cover.png",
+            "screenshots" : [
+                "assets/images/projects/web/vue-calculator/cover.png",
+                "assets/images/projects/web/vue-calculator/demo0.apng",
+                "assets/images/projects/web/vue-calculator/0.png"
+            ]
+        },
 
 
 
@@ -278,10 +299,9 @@
 
     ],
     "showcase" : [
+        "Vue Calculator",
         "Rain World Hunter Tracker",
         "spritesheetr",
-        "RW Level Editor",
-        "Link Forest",
-        "Portfolio Website"
+        "RW Level Editor"
     ]
 }
