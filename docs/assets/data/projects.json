@@ -202,6 +202,7 @@
             "description" : "Created as part of a self-directed course to learn Vue.js, this calculator was my way of trying to build something logical out of something new to me.<br>This app is a simple calculator that responds to button click events, keyboard key inputs, and uses class bindings to indicate the current operator.  The styling is a combination of Flexbox and CSS grids.",
             "details" : [
                 { "Status" : "Complete" },
+                { "End Date " : "February 4, 2019" },
                 { "Technologies" : ["Vue.js 2.0", "Javascript", "CSS"] }
             ],
             "cover" : "assets/images/projects/web/vue-calculator/cover.png",
@@ -209,6 +210,31 @@
                 "assets/images/projects/web/vue-calculator/cover.png",
                 "assets/images/projects/web/vue-calculator/demo0.apng",
                 "assets/images/projects/web/vue-calculator/0.png"
+            ]
+        },
+        {
+            "name" : "Vue Calculator",
+            "socials" : [
+                { "name" : "github", "link" : "https://github.com/jaclynonacloud/vue-database" },
+                { "name" : "live view", "link" : "https://js-v-database.herokuapp.com/#/" }
+            ],
+            "categories": [
+                "web"
+            ],
+            "description" : "Similar to the calculator app, except much larger, this app was built to both test my abilities to translate my learning from Angular into Vue.js, and to start the process of building a world-buliding database as a personal project.  This app doesn't have full capabilities (yet), but if I can get all the Views and components fully linked to the MongoDB database they are attached to, this could be a very good boilerplate for anyone else wanting to build a MEVN stack database.<br>To anyone wanting to testing the addition, editing of characters, you can activate this feature by clicking the footer (the inspector console should give some kind of indication), HOWEVER, I have not yet implemented any limitations/security features, so there are many ways to break the system.  Please don't.  Thank you.",
+            "details" : [
+                { "Status" : "Ongoing" },
+                { "Start Date " : "February 6, 2019" },
+                { "Technologies" : ["Vue.js 2.0", "Javascript", "Sass", "MongoDB", "ExpressJS"] }
+            ],
+            "cover" : "assets/images/projects/web/vue-database/cover.png",
+            "screenshots" : [
+                "assets/images/projects/web/vue-database/cover.png",
+                "assets/images/projects/web/vue-database/0.png",
+                "assets/images/projects/web/vue-database/1.png",
+                "assets/images/projects/web/vue-database/2.png",
+                "assets/images/projects/web/vue-database/3.png",
+                "assets/images/projects/web/vue-database/4.png"
             ]
         },
 
@@ -299,7 +325,7 @@
 
     ],
     "showcase" : [
-        "Vue Calculator",
+        "Vue Database",
         "Rain World Hunter Tracker",
         "spritesheetr",
         "RW Level Editor"
