@@ -213,7 +213,7 @@
             ]
         },
         {
-            "name" : "Vue Calculator",
+            "name" : "Vue Database",
             "socials" : [
                 { "name" : "github", "link" : "https://github.com/jaclynonacloud/vue-database" },
                 { "name" : "live view", "link" : "https://js-v-database.herokuapp.com/#/" }
