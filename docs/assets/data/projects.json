@@ -221,7 +221,7 @@
             "categories": [
                 "web"
             ],
-            "description" : "Similar to the calculator app, except much larger, this app was built to both test my abilities to translate my learning from Angular into Vue.js, and to start the process of building a world-buliding database as a personal project.  This app doesn't have full capabilities (yet), but if I can get all the Views and components fully linked to the MongoDB database they are attached to, this could be a very good boilerplate for anyone else wanting to build a MEVN stack database.<br><br>To anyone wanting to testing the addition, editing of characters, you can activate this feature by <i>clicking the footer</i> (the inspector console should give some kind of indication); HOWEVER, I have not yet implemented any limitations/security features, so there are many ways to break the system.  Please don't.  Thank you.",
+            "description" : "Similar to the calculator app, except much larger, this app was built to both test my abilities to translate my learning from Angular into Vue.js, and to start the process of building a world-buliding database as a personal project.  This app doesn't have full capabilities (yet), but if I can get all the Views and components fully linked to the MongoDB database they are attached to, this could be a very good boilerplate for anyone else wanting to build a MEVN stack database.<br><br>To anyone wanting to testing the addition, editing of characters, you can activate this feature by <i>clicking the footer</i> (the inspector console should give some kind of indication); HOWEVER, I have not yet implemented any limitations/security features, so there are many ways to break the system.  Please don't.  Thank you.<br><br>Having some database issues currently.  Please be patient.",
             "details" : [
                 { "Status" : "Ongoing" },
                 { "Start Date " : "February 6, 2019" },
@@ -325,7 +325,6 @@
 
     ],
     "showcase" : [
-        "Vue Database",
         "Rain World Hunter Tracker",
         "spritesheetr",
         "RW Level Editor"
