@@ -237,6 +237,29 @@
                 "assets/images/projects/web/vue-database/4.png"
             ]
         },
+        {
+            "name" : "Stickrs",
+            "socials" : [],
+            "categories": [
+                "web"
+            ],
+            "description" : "Worked on as a self-directed project, but even more so, a passion project.<br>This website, built with the Vue.js 2 framework is designed with the hopeful vision of providing users a place to collect sticker versions of artwork, be it fanart of popular games and TV shows, or something completely new.  Care is taken in giving the artists and owners of any franchises proper credit, and the rest of the site is created for those souls out there that just like collecting things.  Will you get that exclusive sticker?  Can you truly collect them all?<br><br>While the Vue Database project taught me a lot about the Vue framework as a whole, this project let me refine my code to fully comprehend the 'less is more' mentality.  This database also consists of a lot more intertwined relationships, with collections have a one-to-many connection to its stickrs, and packs being built out of many collections and stickrs.  All database calls are made when the app first loads, and is stored in the Vuex store object, so that you only load the data one, making page loading times much shorter, only really needing to wait for images to load.<br><br>I also learned about mixins in this project, which I used to hoist methods that find the sticker and collection artwork, seeing as I was re-writing this code on every view that had sticker or collection images.",
+            "details" : [
+                { "Status" : "Ongoing" },
+                { "Start Date " : "March 27, 2019" },
+                { "Technologies" : ["Vue.js 2.0", "Javascript", "CSS", "MongoDB", "Mongoose"] }
+            ],
+            "cover" : "assets/images/projects/web/stickrs/cover.png",
+            "screenshots" : [
+                "assets/images/projects/web/stickrs/cover.png",
+                "assets/images/projects/web/stickrs/demo0.apng",
+                "assets/images/projects/web/stickrs/0.png",
+                "assets/images/projects/web/stickrs/1.png",
+                "assets/images/projects/web/stickrs/2.png",
+                "assets/images/projects/web/stickrs/3.png",
+                "assets/images/projects/web/stickrs/4.png"
+            ]
+        },
 
 
 
@@ -325,6 +348,7 @@
 
     ],
     "showcase" : [
+        "Stickrs",
         "Rain World Hunter Tracker",
         "spritesheetr",
         "RW Level Editor"
